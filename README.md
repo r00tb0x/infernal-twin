@@ -21,3 +21,7 @@ What this tool will do ?
 Note: 
 
 This tool might need modifactions and contributions are welcome. 
+
+P.S.
+
+You need to modify the creds.php script. Put your mysql DB password. 

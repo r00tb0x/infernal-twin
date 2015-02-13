@@ -19,7 +19,7 @@ def connect_to_database():
 def create_file():
 	phpcreate = open('/var/www/getcreds.php','wb')
 	php = """<?php
-$con=mysqli_connect("localhost","root","","wpa2");
+$con=mysqli_connect("localhost","root","root","wpa2");
 // Check connection
 if (mysqli_connect_errno()) {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
