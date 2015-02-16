@@ -17,6 +17,9 @@ What this tool will do ?
 9. Set up NAT table
 10. Dump the traffic
 
+How to execute? 
+
+python evil_twin.py
 
 Note: 
 

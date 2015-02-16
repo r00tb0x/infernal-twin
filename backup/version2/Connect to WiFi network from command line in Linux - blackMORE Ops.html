@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html class="ie ie7" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 8]><html class="ie ie8" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html class=" js no-flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" lang="en-US"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE"><meta name="viewport" content="width=device-width, initial-scale=1.0"><script src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/async-ads.js" async=""></script><script src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/cse.js" async="" type="text/javascript"></script><script src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/rtbspub" async="" type="text/javascript"></script><script src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/ca-pub-5985721093179725.js" type="text/javascript" async=""></script><script src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/rtbspub_002" async="" type="text/javascript"></script><script src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/analytics.js" async=""></script><script src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/cloudflare.js" async=""></script><script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"c4d7447d15702bf44ae9b88a00d935cd",petok:"87b5eb76326b3131a5b3d18ed515cc034c383334-1423949756-2196",zone:"blackmoreops.com",rocket:"0",apps:0}];CloudFlare.push({"apps":{"ape":"72feaf8ee9d3835d5e7bb7e90cef3fd6"}});!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=919620257c/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<link rel="profile" href="http://gmpg.org/xfn/11"><link rel="pingback" href="http://www.blackmoreops.com/xmlrpc.php"> <!--[if lt IE 8]><script src="//www.blackmoreops.com/wp-content/themes/customizr/inc/assets/css/fonts/lte-ie7.js"></script><![endif]--><style type="text/css" id="customizr-inline-fonts">@font-face{font-family:genericons;src:url('http://www.blackmoreops.com/wp-content/themes/customizr/inc/assets/css/fonts/fonts/genericons-regular-webfont.eot');src:url('http://www.blackmoreops.com/wp-content/themes/customizr/inc/assets/css/fonts/fonts/genericons-regular-webfont.eot?#iefix') format('embedded-opentype'),url('http://www.blackmoreops.com/wp-content/themes/customizr/inc/assets/css/fonts/fonts/genericons-regular-webfont.woff') format('woff'),url('http://www.blackmoreops.com/wp-content/themes/customizr/inc/assets/css/fonts/fonts/genericons-regular-webfont.ttf') format('truetype'),url('http://www.blackmoreops.com/wp-content/themes/customizr/inc/assets/css/fonts/fonts/genericons-regular-webfont.svg#genericonsregular') format('svg')}@font-face{font-family:entypo;src:url('http://www.blackmoreops.com/wp-content/themes/customizr/inc/assets/css/fonts/fonts/entypo.eot);src:url(http://www.blackmoreops.com/wp-content/themes/customizr/inc/assets/css/fonts/fonts/entypo.eot?#iefix') format('embedded-opentype'),url('http://www.blackmoreops.com/wp-content/themes/customizr/inc/assets/css/fonts/fonts/entypo.woff') format('woff'),url('http://www.blackmoreops.com/wp-content/themes/customizr/inc/assets/css/fonts/fonts/entypo.ttf') format('truetype'),url('http://www.blackmoreops.com/wp-content/themes/customizr/inc/assets/css/fonts/fonts/entypo.svg#genericonsregular') format('svg')}</style><title>Connect to WiFi network from command line in Linux - blackMORE Ops</title><meta name="description" content="This guide shows you how to connect to WiFi network from command line in Linux. Detailed guide on WPA/WPA2 network connectivity issues. #wireless #wpa2 #cli"><meta name="keywords" content="WiFi network from command line cli, How to, Linux, Wireless, Wireless Cards"><link rel="canonical" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/"><link rel="publisher" href="http://plus.google.com/111568537769476572569"><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="Connect to WiFi network (WPA/WPA2) from command line in Linux"><meta property="og:description" content="This guide shows you how to connect to WiFi network from command line in Linux. Detailed guide on WPA/WPA2 network connectivity issues. #wireless #wpa2 #cli"><meta property="og:url" content="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/"><meta property="og:site_name" content="blackMORE Ops"><meta property="article:publisher" content="https://www.facebook.com/blackMOREOps"><meta property="article:author" content="https://www.facebook.com/blackmoreops"><meta property="article:tag" content="cli"><meta property="article:tag" content="How to"><meta property="article:tag" content="Linux"><meta property="article:tag" content="Wireless"><meta property="article:tag" content="Wireless Cards"><meta property="article:section" content="How to"><meta property="article:section" content="Linux"><meta property="article:section" content="Networking"><meta property="article:section" content="Wifi"><meta property="article:published_time" content="2014-09-18T11:58:27+00:00"><meta property="fb:admins" content="643795556"><meta property="og:image" content="http://www.blackmoreops.com/wp-content/uploads/2014/09/Connect-to-WiFi-network-in-Linux-from-command-line-blackMORE-Ops.png"><meta name="twitter:card" content="summary"><meta name="twitter:description" content="This guide shows you how to connect to WiFi network from command line in Linux. Detailed guide on WPA/WPA2 network connectivity issues. #wireless #wpa2 #cli"><meta name="twitter:title" content="Connect to WiFi network from command line in Linux - blackMORE Ops"><meta name="twitter:site" content="@blackmoreops"><meta name="twitter:domain" content="blackMORE Ops"><meta name="twitter:creator" content="@blackmoreops"><meta itemprop="name" content="Connect to WiFi network (WPA/WPA2) from command line in Linux"><meta itemprop="description" content="This guide shows you how to connect to WiFi network from command line in Linux. Detailed guide on WPA/WPA2 network connectivity issues. #wireless #wpa2 #cli"><meta itemprop="image" content="http://www.blackmoreops.com/wp-content/uploads/2014/09/Connect-to-WiFi-network-in-Linux-from-command-line-blackMORE-Ops.png"><link rel="alternate" type="application/rss+xml" title="blackMORE Ops » Feed" href="http://www.blackmoreops.com/feed/"><link rel="alternate" type="application/rss+xml" title="blackMORE Ops » Comments Feed" href="http://www.blackmoreops.com/comments/feed/"><link rel="alternate" type="application/rss+xml" title="blackMORE Ops » Connect to WiFi network from command line in Linux Comments Feed" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/feed/"><link rel="stylesheet" id="arevico_scsfbcss-css" href="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/scs.css" type="text/css" media="all"><link rel="stylesheet" id="toc-screen-css" href="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/screen.css" type="text/css" media="all"><link rel="stylesheet" id="wpclef-main-css" href="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/main.css" type="text/css" media="all"><link rel="stylesheet" id="customizr-skin-css" href="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/blue.css" type="text/css" media="all"><style id="customizr-skin-inline-css" type="text/css">.navbar .nav>li>a:first-letter {font-size:17px}header.tc-header{border-top:none}.sticky-enabled .tc-shrink-on .site-logo
+img{height:30px!important;width:auto!important}.sticky-enabled .tc-shrink-on .brand .site-title{font-size:0.6em;opacity:0.8;line-height:1.2em}.tc-rectangular-thumb{max-height:250px;height:250px}.single .tc-rectangular-thumb{max-height:250px;height:250px}</style><link rel="stylesheet" id="customizr-style-css" href="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/style.css" type="text/css" media="all"><link rel="stylesheet" id="fancyboxcss-css" href="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/jquery.css" type="text/css" media="all"><link rel="stylesheet" id="jetpack_css-css" href="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/jetpack.css" type="text/css" media="all"><script type="text/javascript" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/jquery.js"></script><script type="text/javascript" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/jquery-migrate.js"></script><script type="text/javascript" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/related-posts.js"></script><script type="text/javascript" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/scs.js"></script><script type="text/javascript">var lb_l_ret={"width":"400","height":"255","delay":"6000","coc":"1","fb_id":"blackMOREOps","cooc":"0","display_on_post":"1","display_on_homepage":"1","show_once":"3"};</script><script type="text/javascript" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/launch.js"></script><script type="text/javascript">var TCParams={"FancyBoxState":"1","FancyBoxAutoscale":"1","SliderName":"","SliderDelay":"","SliderHover":"1","SmoothScroll":"easeOutExpo","ReorderBlocks":"1","CenterSlides":"","HasComments":"1","LeftSidebarClass":".span3.left.tc-sidebar","RightSidebarClass":".span3.right.tc-sidebar","LoadModernizr":"1","stickyCustomOffset":"0","stickyHeader":"","dropdowntoViewport":"1","timerOnScrollAllBrowsers":"1","extLinksStyle":"","extLinksTargetExt":"","dropcapEnabled":"","dropcapWhere":{"post":"","page":"1"},"dropcapMinWords":"50","skipSelectors":{"tags":["IMG","IFRAME","H1","H2","H3","H4","H5","H6","BLOCKQUOTE"],"classes":[],"id":[]}};</script><script type="text/javascript" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/tc-scripts.js"></script><script type="text/javascript" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/hammer.js"></script><script type="text/javascript" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/external-tracking.js"></script><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.blackmoreops.com/xmlrpc.php?rsd"><link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.blackmoreops.com/wp-includes/wlwmanifest.xml"><meta name="generator" content="WordPress 4.1"><link rel="shortlink" href="http://www.blackmoreops.com/?p=2596"><style type="text/css">div#toc_container{width:66%}</style><style type="text/css">img#wpstats{display:none}</style><link rel="author" href="http://plus.google.com/+blackmoreops"><style type="text/css">.recentcomments
+a{display:inline !important;padding:0
+!important;margin:0
+!important}</style><link rel="shortcut icon" href="http://www.blackmoreops.com/wp-content/uploads/2013/12/favicon.ico" type="image/x-icon"><style type="text/css" id="syntaxhighlighteranchor"></style><script type="text/javascript">window.google_analytics_uacct="4519113138";</script><script type="text/javascript">var analyticsFileTypes=['patch'];var analyticsSnippet='disabled';var analyticsEventTracking='enabled';</script><script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-44798995-1','auto');ga('send','pageview');</script> <!--[if lt IE 9]><link href="//www.blackmoreops.com/wp-content/themes/customizr/inc/assets/css/fonts/ie8-hacks.css" rel="stylesheet" type="text/css"/> <![endif]--><style type="text/css">.cf-hidden { display: none; } .cf-invisible { visibility: hidden; }</style><script type="text/javascript" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/jsapi"></script><script src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/a" type="text/javascript"></script><script src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/a_002.html" type="text/javascript"></script><link rel="stylesheet" href="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/defaulten.css" type="text/css"><link rel="stylesheet" href="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/default.css" type="text/css"><script src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/defaulten.js" type="text/javascript"></script><style type="text/css">
+.gsc-control-cse {
+font-family: Arial, sans-serif;
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-control-cse .gsc-table-result {
+font-family: Arial, sans-serif;
+}
+input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+border-color: #D9D9D9;
+}
+input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
+border-color: #666666;
+background-color: #CECECE;
+background-image: none;
+filter: none;
+}
+.gsc-tabHeader.gsc-tabhInactive {
+border-color: #E9E9E9;
+background-color: #E9E9E9;
+}
+.gsc-tabHeader.gsc-tabhActive {
+border-color: #FF9900;
+border-bottom-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-tabsArea {
+border-color: #FF9900;
+}
+.gsc-webResult.gsc-result,
+.gsc-results .gsc-imageResult {
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-webResult.gsc-result:hover,
+.gsc-imageResult:hover {
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gs-webResult.gs-result a.gs-title:link,
+.gs-webResult.gs-result a.gs-title:link b,
+.gs-imageResult a.gs-title:link,
+.gs-imageResult a.gs-title:link b {
+color: #0000CC;
+}
+.gs-webResult.gs-result a.gs-title:visited,
+.gs-webResult.gs-result a.gs-title:visited b,
+.gs-imageResult a.gs-title:visited,
+.gs-imageResult a.gs-title:visited b {
+color: #0000CC;
+}
+.gs-webResult.gs-result a.gs-title:hover,
+.gs-webResult.gs-result a.gs-title:hover b,
+.gs-imageResult a.gs-title:hover,
+.gs-imageResult a.gs-title:hover b {
+color: #0000CC;
+}
+.gs-webResult.gs-result a.gs-title:active,
+.gs-webResult.gs-result a.gs-title:active b,
+.gs-imageResult a.gs-title:active,
+.gs-imageResult a.gs-title:active b {
+color: #0000CC;
+}
+.gsc-cursor-page {
+color: #0000CC;
+}
+a.gsc-trailing-more-results:link {
+color: #0000CC;
+}
+.gs-webResult .gs-snippet,
+.gs-imageResult .gs-snippet,
+.gs-fileFormatType {
+color: #000000;
+}
+.gs-webResult div.gs-visibleUrl,
+.gs-imageResult div.gs-visibleUrl {
+color: #008000;
+}
+.gs-webResult div.gs-visibleUrl-short {
+color: #008000;
+}
+.gs-webResult div.gs-visibleUrl-short {
+display: none;
+}
+.gs-webResult div.gs-visibleUrl-long {
+display: block;
+}
+.gs-promotion div.gs-visibleUrl-short {
+display: none;
+}
+.gs-promotion div.gs-visibleUrl-long {
+display: block;
+}
+.gsc-cursor-box {
+border-color: #FFFFFF;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+border-color: #E9E9E9;
+background-color: #FFFFFF;
+color: #0000CC;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+border-color: #FF9900;
+background-color: #FFFFFF;
+color: #0000CC;
+}
+.gsc-webResult.gsc-result.gsc-promotion {
+border-color: #336699;
+background-color: #FFFFFF;
+}
+.gsc-completion-title {
+color: #0000CC;
+}
+.gsc-completion-snippet {
+color: #000000;
+}
+.gs-promotion a.gs-title:link,
+.gs-promotion a.gs-title:link *,
+.gs-promotion .gs-snippet a:link {
+color: #0000CC;
+}
+.gs-promotion a.gs-title:visited,
+.gs-promotion a.gs-title:visited *,
+.gs-promotion .gs-snippet a:visited {
+color: #0000CC;
+}
+.gs-promotion a.gs-title:hover,
+.gs-promotion a.gs-title:hover *,
+.gs-promotion .gs-snippet a:hover {
+color: #0000CC;
+}
+.gs-promotion a.gs-title:active,
+.gs-promotion a.gs-title:active *,
+.gs-promotion .gs-snippet a:active {
+color: #0000CC;
+}
+.gs-promotion .gs-snippet,
+.gs-promotion .gs-title .gs-promotion-title-right,
+.gs-promotion .gs-title .gs-promotion-title-right * {
+color: #000000;
+}
+.gs-promotion .gs-visibleUrl,
+.gs-promotion .gs-visibleUrl-short {
+color: #008000;
+}
+</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-moz-user-select:none;white-space:nowrap}.gsst_e{opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-moz-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-moz-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gscsep_a{display:none}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gsfe_a{border:1px solid #b9b9b9;border-top-color:#a0a0a0;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);}.gsfe_b{border:1px solid #4d90fe;outline:none;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);}.gssb_a{padding:0 9px}.gsib_a{padding-right:8px;padding-left:8px}.gsst_a{padding-top:3px}.gssb_e{border:0}.gssb_l{margin:5px 0}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style></head><body class="single single-post postid-2596 single-format-standard tc-fade-hover-links tc-is-mobile tc-no-sticky-header" itemscope="" itemtype="http://schema.org/WebPage"><iframe style="display: none ! important;" id="_mN_cksync_0" marginheight="0" marginwidth="0" scrolling="no" width="0" frameborder="0" height="0"></iframe><iframe style="display: none ! important;" id="_mN_beacons" marginheight="0" marginwidth="0" scrolling="no" width="0" frameborder="0" height="0"></iframe><script type="text/javascript">
+//<![CDATA[
+try{(function(a){var b="http://",c="www.blackmoreops.com",d="/cdn-cgi/cl/",e="img.gif",f=new a;f.src=[b,c,d,e].join("")})(Image)}catch(e){}
+//]]>
+</script> <header class="tc-header clearfix row-fluid tc-tagline-off tc-title-logo-on  tc-shrink-on tc-menu-on logo-left" role="banner"><div class="brand span3 pull-left"> <a class="site-logo" href="http://www.blackmoreops.com/" title="blackMORE Ops | Learn one trick a day ...."><img src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/image41.jpg" alt="Back Home" style="max-width:250px;max-height:100px" class=" "></a></div><div class="container outside"><h2 class="site-description">Learn one trick a day ....</h2></div><div class="navbar-wrapper clearfix span9 tc-open-on-click left"><div class="navbar resp"><div class="navbar-inner" role="navigation"><div class="row-fluid"><div class="social-block span5"><a class="social-icon icon-feed" href="http://www.blackmoreops.com/feed/" title="Subscribe to my rss feed"></a><a class="social-icon icon-twitter" href="https://twitter.com/blackMOREOps" title="Follow me on Twitter" target="_blank"></a><a class="social-icon icon-facebook" href="https://www.facebook.com/blackMOREOps" title="Follow me on Facebook" target="_blank"></a><a class="social-icon icon-google" href="https://plus.google.com/+blackMOREOps" title="Follow me on Google+" target="_blank"></a><a class="social-icon icon-tumblr" href="http://blackmoreops.tumblr.com/" title="Follow me on Tumblr" target="_blank"></a><a class="social-icon icon-pinterest" href="http://www.pinterest.com/blackmoreops/" title="Pin me on Pinterest" target="_blank"></a></div><h2 class="span7 inside site-description">Learn one trick a day ....</h2><button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div class="nav-collapse collapse"><div class="menu-my-menu-container"><ul id="menu-my-menu-2" class="nav"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-49"><a rel="author" href="http://www.blackmoreops.com/">Home</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-81"><a rel="author" href="http://www.blackmoreops.com/disclaimer/">Disclaimer</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a rel="author" href="http://www.blackmoreops.com/privacy-policy/">Privacy Policy</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1940"><a href="http://www.blackmoreops.com/service-status/">Service Status</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a rel="author" href="http://www.blackmoreops.com/contact-us/">Contact Us</a></li></ul></div></div></div></div></div></div> </header> <!--mfunc include_once('/home/blackmor/public_html/wp-content/plugins/ad-injection/adshow.php') --><!--/mfunc-->
+
+<!--Ad Injection mfunc mode ad code--><!--mfunc adshow_display_ad_file_v2(array('ad_widget_24_1.txt'), array(100), array('align' => 'center', 'clear' => '', 'margin_top' => '2', 'margin_bottom' => '2', 'padding_top' => '2', 'padding_bottom' => '2'), array(), array()) -->
+
+<div style="margin-top:2px;margin-bottom:2px;padding-top:2px;padding-bottom:2px;"><center><script async="" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/adsbygoogle.js"></script>
+<!-- 728 x 90 - Leaderboard -->
+<ins data-adsbygoogle-status="done" class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-5985721093179725" data-ad-slot="5719813097"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;" scrolling="no" width="728" frameborder="0" height="90"></iframe></ins></ins></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></center></div><!--/mfunc-->
+
+<div id="main-wrapper" class="container">
+
+    <div class="tc-hot-crumble container" role="navigation"><div class="row"><div class="span12"><div class="breadcrumb-trail breadcrumbs" itemprop="breadcrumb"><span class="trail-begin"><a href="http://www.blackmoreops.com/" title="blackMORE Ops" rel="home" class="trail-begin">Home</a></span> <span class="sep">»</span> <a href="http://www.blackmoreops.com/category/how-to/" title="How to">How to</a> <span class="sep">»</span> <span class="trail-end">Connect to WiFi network from command line in Linux</span></div></div></div></div>    
+    <div class="container" role="main">
+        <div class="row column-content-wrapper">
+
+                            
+                <div id="content" class="span9 article-container">
+                    
+                    
+                        
+                                                                                    
+                                                                    <article id="post-2596" class="post-2596 post type-post status-publish format-standard has-post-thumbnail hentry category-how-to category-linux category-networking category-wifi tag-cli tag-how-to tag-linux tag-wireless tag-wireless-cards row-fluid">
+                                                <header class="entry-header">
+          <h1 class="entry-title format-icon">Connect to WiFi network from command line in Linux <span class="comments-link"><a href="#tc-comment-title" title="Comment(s) on Connect to WiFi network from command line in Linux"><span class="tc-comment-bubble fs1 icon-bubble"></span><span class="inner">15</span></a></span></h1>            <div class="entry-meta">
+                This entry was posted in <a class="" ""="" href="http://www.blackmoreops.com/category/how-to/" title="View all posts in How to"> How to </a><a class="" ""="" href="http://www.blackmoreops.com/category/linux/" title="View all posts in Linux"> Linux </a><a class="" ""="" href="http://www.blackmoreops.com/category/linux/networking/" title="View all posts in Networking"> Networking </a><a class="" ""="" href="http://www.blackmoreops.com/category/wifi/" title="View all posts in Wifi"> Wifi </a> and tagged <a class="" ""="" href="http://www.blackmoreops.com/tag/cli/" title="View all posts in cli"> cli </a><a class="" ""="" href="http://www.blackmoreops.com/tag/how-to/" title="View all posts in How to"> How to </a><a class="" ""="" href="http://www.blackmoreops.com/tag/linux/" title="View all posts in Linux"> Linux </a><a class="" ""="" href="http://www.blackmoreops.com/tag/wireless/" title="View all posts in Wireless"> Wireless </a><a class="" ""="" href="http://www.blackmoreops.com/tag/wireless-cards/" title="View all posts in Wireless Cards"> Wireless Cards </a> on <a href="http://www.blackmoreops.com/2014/09/18/" title="11:58 am" rel="bookmark"><time class="entry-date updated" datetime="2014-09-18T11:58:27+00:00">September 18, 2014</time></a> <span class="by-author">by <span class="author vcard"><a class="url fn n" href="http://www.blackmoreops.com/author/admin/" title="View all posts by blackMORE Ops" rel="author">blackMORE Ops</a></span></span>             </div><!-- .entry-meta -->
+            <hr class="featurette-divider __before_content">        </header>
+        
+          <section class="entry-content ">
+              
+<!--Ad Injection mfunc mode ad include code--><!--mfunc include_once('/home/blackmor/public_html/wp-content/plugins/ad-injection/adshow.php') --><!--/mfunc-->
+
+<!--Ad Injection mfunc mode ad code--><!--mfunc adshow_display_ad_file_v2(array('ad_top_1.txt'), array(100), array('align' => 'center', 'clear' => '', 'margin_top' => '10', 'margin_bottom' => '10', 'padding_top' => '10', 'padding_bottom' => '10'), array(), array()) -->
+
+<div style="margin-top:10px;margin-bottom:10px;padding-top:10px;padding-bottom:10px;"><center><script id="mNCC" language="javascript">medianet_width='728';medianet_height='90';medianet_crid='147476776';</script>  <script id="mNSC" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/nmedianet.js" language="javascript"></script><iframe style="display: none ! important;" id="_mN_gpt_147476776" marginheight="0" marginwidth="0" scrolling="no" width="728" frameborder="0" height="90"></iframe><iframe id="_mN_main_147476776_n" marginheight="0" marginwidth="0" scrolling="no" width="728" frameborder="0" height="90"></iframe><script language="javascript" type="text/javascript" id="_mN_dy_147476776" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/fcmdynet.js"></script><iframe marginwidth="0" marginheight="0" id="_mN_main_147476776_0" style="display:none;" scrolling="NO" width="728" frameborder="0" height="90"></iframe> </center></div><!--/mfunc-->
+<p>How many of you failed to connect to WiFi network in Linux? Did you 
+bumped into issues like the followings in different forums, discussion 
+page, blogs? I am sure everyone did at some point. Following list shows 
+just the results from Page 1 of a Google search result with “Unable to 
+connect to WiFi network in Linux” keywords.</p>
+<ol>
+<li><a href="http://www.linux.org/threads/cannot-connect-to-wifi-at-home-after-upgrade-to-ubuntu-14-04.5873/" target="_blank">Cannot connect to wifi at home after upgrade to ubuntu 14.04</a></li>
+<li><a href="http://unix.stackexchange.com/questions/121060/arch-linux-not-connecting-to-wifi-anymore" target="_blank">Arch Linux not connecting to Wifi anymore</a></li>
+<li><a href="http://ubuntuforums.org/showthread.php?t=2171437" target="_blank">I can’t connect to my wifi </a></li>
+<li><a href="http://ubuntuforums.org/showthread.php?t=1856462" target="_blank">Cannot connect to WiFi</a></li>
+<li><a href="https://bugs.launchpad.net/ubuntu/+bug/1173759" target="_blank">Ubuntu 13.04 can detect wi-fi but can’t connect </a></li>
+<li><a href="https://bbs.archlinux.org/viewtopic.php?id=178274" target="_blank">Unable to connect to wireless network ath9k</a></li>
+<li><a href="http://forums.linuxmint.com/viewtopic.php?f=194&amp;t=83599" target="_blank">Crazy! I can see wireless network but can’t connect</a></li>
+<li><a href="http://stackoverflow.com/questions/21214539/unable-to-connect-to-wifi-access-point-in-debian-7" target="_blank">Unable to connect to Wifi Access point in Debian 7</a></li>
+<li><a href="http://www.linux.com/community/forums/networking/unable-to-connect-wireless/17116" target="_blank">Unable to connect Wireless</a></li>
+</ol>
+<p>I came across this article in <a href="http://linuxcommando.blogspot.in/2013/10/how-to-connect-to-wpawpa2-wifi-network.html" target="_blank">blogspot</a>
+ and this was one of the most well written guides I’ve ever came across.
+ I am slightly changing that post to accommodate for all flavor of Linux
+ releases.</p>
+<p><a title="Connect to WiFi network in Linux from command line - blackMORE Ops" href="http://www.blackmoreops.com/wp-content/uploads/2014/09/Connect-to-WiFi-network-in-Linux-from-command-line-blackMORE-Ops.png" class="grouped_elements" rel="tc-fancybox-group2596"><img class="alignnone size-full wp-image-2635" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/Connect-to-WiFi-network-in-Linux-from-command-line-blackMORE.png" alt="Connect to WiFi network in Linux from command line - blackMORE Ops" width="232" height="256"></a></p>
+<p>Following guide explains how you can connect to a WiFi network in 
+Linux from command Line. This guide will take you through the steps for 
+connecting to a WPA/WPA2 WiFi network.</p>
+<div id="toc_container" class="toc_transparent no_bullets"><p class="toc_title">Contents <span class="toc_toggle">[<a href="#">hide</a>]</span></p><ul class="toc_list"><li><a href="#WiFi_network_from_command_line_8211_Required_tools">WiFi network from command line – Required tools</a></li><li><a href="#Linux_WPAWPA2IEEE_8021X_Supplicant">Linux WPA/WPA2/IEEE 802.1X Supplicant</a><ul><li><a href="#iw_8211_Linux_Wireless">iw – Linux Wireless</a></li><li><a href="#ip_8211_ip_program_in_Linux">ip – ip program in Linux</a></li><li><a href="#ping">ping</a></li></ul></li><li><a href="#Step_1_Find_available_WiFi_adapters_8211_WiFi_network_from_command_line">Step 1: Find available WiFi adapters – WiFi network from command line
+</a></li><li><a href="#Step_2_Check_device_status_8211_WiFi_network_from_command_line">Step 2: Check device status – WiFi network from command line
+</a></li><li><a href="#Step_3_Bring_up_the_WiFi_interface_8211_WiFi_network_from_command_line">Step 3: Bring up the WiFi interface – WiFi network from command line
+</a></li><li><a href="#Step_4_Check_the_connection_status_8211_WiFi_network_from_command_line">Step 4: Check the connection status – WiFi network from command line
+</a></li><li><a href="#Step_5_Scan_to_find_WiFi_Network_8211_WiFi_network_from_command_line">Step 5: Scan to find WiFi Network – WiFi network from command line
+</a></li><li><a href="#Step_6_Generate_a_wpawpa2_configuration_file_8211_WiFi_network_from_command_line">Step 6: Generate a wpa/wpa2 configuration file – WiFi network from command line
+</a></li><li><a href="#Step_7_Connect_to_WPAWPA2_WiFi_network_8211_WiFi_network_from_command_line">Step 7: Connect to WPA/WPA2 WiFi network – WiFi network from command line
+</a></li><li><a href="#Step_8_Get_an_IP_using_dhclient_8211_WiFi_network_from_command_line">Step 8: Get an IP using dhclient – WiFi network from command line
+</a></li><li><a href="#Step_9_Test_connectivity_8211_WiFi_network_from_command_line">Step 9: Test connectivity – WiFi network from command line
+</a></li><li><a href="#Summary">Summary</a></li><li><a href="#Related">Related</a></li></ul></div>
+
+<p>&nbsp;</p>
+<h3><span id="WiFi_network_from_command_line_8211_Required_tools"><span style="color: #993300;">WiFi network from command line – Required tools</span></span></h3>
+<p>Following tools are required to connect to WiFi network in Linux from command line</p>
+<ol>
+<li><a href="http://w1.fi/wpa_supplicant/" target="_blank">wpa_supplicant</a></li>
+<li><a href="http://wireless.kernel.org/en/users/Documentation/iw" target="_blank">iw</a></li>
+<li><a href="http://linux.die.net/man/8/ip" target="_blank">ip</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Ping_%28networking_utility%29" target="_blank">ping</a></li>
+</ol>
+<p>Before we jump into technical jargons let’s just quickly go over each item at a time.</p>
+<p>&nbsp;</p>
+<h3><span id="Linux_WPAWPA2IEEE_8021X_Supplicant"><span style="color: #993300;">Linux WPA/WPA2/IEEE 802.1X Supplicant</span></span></h3>
+<p>wpa_supplicant is a WPA Supplicant for Linux, BSD, Mac OS X, and 
+Windows with support for WPA and WPA2 (IEEE 802.11i / RSN). It is 
+suitable for both desktop/laptop computers and embedded systems. 
+Supplicant is the IEEE 802.1X/WPA component that is used in the client 
+stations. It implements key negotiation with a WPA Authenticator and it 
+controls the roaming and IEEE 802.11 authentication/association of the 
+wlan driver.</p>
+<p>&nbsp;</p>
+<h4><span id="iw_8211_Linux_Wireless"><span style="color: #993300;">iw – Linux Wireless</span></span></h4>
+<p>iw is a new nl80211 based CLI configuration utility for wireless 
+devices. It supports all new drivers that have been added to the kernel 
+recently. The old tool iwconfing, which uses Wireless Extensions 
+interface, is deprecated and it’s strongly recommended to switch to iw 
+and nl80211.</p>
+<p>&nbsp;</p>
+<h4><span id="ip_8211_ip_program_in_Linux"><span style="color: #993300;">ip – ip program in Linux</span></span></h4>
+<p>ip is used to show / manipulate routing, devices, policy routing and 
+tunnels. It is used for enabling/disabling devices and it helps you to 
+find general networking informations. ip was written by Alexey N. 
+Kuznetsov and added in Linux 2.2. Use <code>man ip</code> to see full help/man page.</p>
+<p>&nbsp;</p>
+<h4><span id="ping"><span style="color: #993300;">ping</span></span></h4>
+<p>Good old ping For every ping, there shall be a pong …. ping-pong – ping-pong – ping-pong … that should explain it.</p>
+<p>BTW <code>man ping</code> helps too …</p>
+<p>&nbsp;</p>
+<h3><span id="Step_1_Find_available_WiFi_adapters_8211_WiFi_network_from_command_line"><span style="color: #993300;">Step 1: Find available WiFi adapters – WiFi network from command line<br>
+</span></span></h3>
+<p>This actually help .. I mean you need to know your WiFi device name 
+before you go an connect to a WiFi network. So just use the following 
+command that will list all the connected WiFi adapters in your Linux 
+machines.</p>
+<pre>root@kali:~# iw dev
+phy#1
+&nbsp;&nbsp; &nbsp;Interface wlan0
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;ifindex 4
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;type managed
+root@kali:~#</pre>
+<p>Let me explain the output:</p>
+<p>This system has 1 physical WiFi adapters.</p>
+<ol>
+<li><strong>Designated name:</strong> phy#1</li>
+<li><strong>Device names:</strong> wlan0</li>
+<li><strong>Interface Index:</strong> 4. Usually as per connected ports (which can be an USB port).</li>
+<li><strong>Type:</strong> Managed. Type specifies the operational mode 
+of the wireless devices. managed means the device is a WiFi station or 
+client that connects to an access point.</li>
+</ol>
+<p><a title="Connect to WiFi network in Linux from command line - Find WiFi adapters - blackMORE Ops-1" href="http://www.blackmoreops.com/wp-content/uploads/2014/09/Connect-to-WiFi-network-in-Linux-from-command-line-Find-WiFi-adapters-blackMORE-Ops-11.png" class="grouped_elements" rel="tc-fancybox-group2596"><img class="alignnone size-full wp-image-2625" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/Connect-to-WiFi-network-in-Linux-from-command-line-Find-WiFi.png" alt="Connect to WiFi network in Linux from command line - Find WiFi adapters - blackMORE Ops-1" width="383" height="204"></a></p>
+<p>&nbsp;</p>
+<h3><span id="Step_2_Check_device_status_8211_WiFi_network_from_command_line"><span style="color: #993300;">Step 2: Check device status – WiFi network from command line<br>
+</span></span></h3>
+<p>By this time many of you are thinking, why two network devices. The 
+reason I am using two is because I would like to show how a connected 
+and disconnected device looks like side by side. Next command will show 
+you exactly that.</p>
+<p>You can check that if the wireless device is up or not using the following command:</p>
+<pre>root@kali:~# ip link show wlan0
+4: wlan0: &lt;<span style="color: #ff0000;">BROADCAST,MULTICAST</span>&gt; mtu 1500 qdisc mq state <span style="color: #ff0000;">DOWN</span> mode <span style="color: #ff0000;">DORMANT</span> qlen 1000
+&nbsp;&nbsp;&nbsp; link/ether 00:60:64:37:4a:30 brd ff:ff:ff:ff:ff:ff
+root@kali:~# 
+
+</pre>
+<p>As you can already see, I got once interface (wlan0) as state UP and wlan1 as state DOWN.</p>
+<p>Look for the word “UP” inside the brackets in the first line of the output.</p>
+<p><a title="Connect to WiFi network in Linux from command line - Check device status- blackMORE Ops-2" href="http://www.blackmoreops.com/wp-content/uploads/2014/09/Connect-to-WiFi-network-in-Linux-from-command-line-Check-device-status-blackMORE-Ops-22.png" class="grouped_elements" rel="tc-fancybox-group2596"><img class="alignnone size-full wp-image-2626" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/Connect-to-WiFi-network-in-Linux-from-command-line-Check-dev.png" alt="Connect to WiFi network in Linux from command line - Check device status- blackMORE Ops-2" width="737" height="205"></a></p>
+<p>&nbsp;</p>
+<p>In the above example, <i>wlan1</i> is not UP. Execute the following command to</p>
+<p>&nbsp;</p>
+<h3><span id="Step_3_Bring_up_the_WiFi_interface_8211_WiFi_network_from_command_line"><span style="color: #993300;">Step 3: Bring up the WiFi interface – WiFi network from command line<br>
+</span></span></h3>
+<p>Use the following command to bring up the WiFI interface</p>
+<pre>root@kali:~# ip link set wlan0 up</pre>
+<p>&nbsp;</p>
+<blockquote><p>Note:&nbsp;If you’re using Ubuntu, Linux Mint, CentOS, Fedora etc. use the command with ‘sudo’ prefix</p></blockquote>
+<p><a title="Connect to WiFi network in Linux from command line - Bring device up - blackMORE Ops-3" href="http://www.blackmoreops.com/wp-content/uploads/2014/09/Connect-to-WiFi-network-in-Linux-from-command-line-Bring-device-up-blackMORE-Ops-31.png" class="grouped_elements" rel="tc-fancybox-group2596"><img class="alignnone wp-image-2627 size-full" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/Connect-to-WiFi-network-in-Linux-from-command-line-Bring-dev.png" alt="Connect to WiFi network in Linux from command line - Bring device up - blackMORE Ops-3" width="737" height="234"></a></p>
+<p>If you run the show link command again, you can tell that <i>wlan1</i> is now UP.</p>
+<pre>root@kali:~# ip link show wlan0
+4: wlan0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc mq state UP mode DORMANT qlen 1000
+&nbsp;&nbsp;&nbsp; link/ether 00:60:64:37:4a:30 brd ff:ff:ff:ff:ff:ff
+root@kali:~# 
+</pre>
+<p>&nbsp;</p>
+<h3><span id="Step_4_Check_the_connection_status_8211_WiFi_network_from_command_line"><span style="color: #993300;">Step 4: Check the connection status – WiFi network from command line<br>
+</span></span></h3>
+<p>You can check WiFi network connection status from command line using the following command</p>
+<pre>root@kali:~# iw wlan0 link
+Not connected.
+root@kali:~# 
+</pre>
+<p><a title="Connect to WiFi network in Linux from command line - Check device connection - blackMORE Ops-4" href="http://www.blackmoreops.com/wp-content/uploads/2014/09/Connect-to-WiFi-network-in-Linux-from-command-line-Check-device-connection-blackMORE-Ops-41.png" class="grouped_elements" rel="tc-fancybox-group2596"><img class="alignnone wp-image-2628 size-full" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/Connect-to-WiFi-network-in-Linux-from-command-line-Check_002.png" alt="Connect to WiFi network in Linux from command line - Check device connection - blackMORE Ops-4" width="375" height="174"></a></p>
+<p>The above output shows that you are not connected to any network.</p>
+<p>&nbsp;</p>
+<h3><span id="Step_5_Scan_to_find_WiFi_Network_8211_WiFi_network_from_command_line"><span style="color: #993300;">Step 5: Scan to find WiFi Network – WiFi network from command line<br>
+</span></span></h3>
+<p>Scan to find out what WiFi network(s) are detected</p>
+<pre>root@kali:~# iw wlan0 scan
+BSS 9c:97:26:de:12:37 (on wlan0)
+&nbsp;&nbsp; &nbsp;TSF: 5311608514951 usec (61d, 11:26:48)
+&nbsp;&nbsp; &nbsp;freq: 2462
+&nbsp;&nbsp; &nbsp;beacon interval: 100
+&nbsp;&nbsp; &nbsp;capability: ESS Privacy ShortSlotTime (0x0411)
+&nbsp;&nbsp; &nbsp;signal: -53.00 dBm 
+&nbsp;&nbsp; &nbsp;last seen: 104 ms ago
+&nbsp;&nbsp; &nbsp;Information elements from Probe Response frame:
+&nbsp;&nbsp; &nbsp;<strong><span style="color: #ff0000;">SSID: blackMOREOps</span></strong>
+&nbsp;&nbsp; &nbsp;Supported rates: 1.0* 2.0* 5.5* 11.0* 18.0 24.0 36.0 54.0 
+&nbsp;&nbsp; &nbsp;DS Parameter set: channel 11
+&nbsp;&nbsp; &nbsp;ERP: Barker_Preamble_Mode
+&nbsp;&nbsp; &nbsp;RSN:&nbsp;&nbsp; &nbsp; * Version: 1
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; * Group cipher: CCMP
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; * Pairwise ciphers: CCMP
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; * Authentication suites: PSK
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; * Capabilities: 16-PTKSA-RC (0x000c)
+&nbsp;&nbsp; &nbsp;Extended supported rates: 6.0 9.0 12.0 48.0 
+---- truncated ----</pre>
+<p>&nbsp;</p>
+<p>The 2 important pieces of information from the above are the SSID and
+ the security protocol (WPA/WPA2 vs WEP). The SSID from the above 
+example is <span style="color: #ff0000;"><strong>blackMOREOps</strong>.</span>
+ The security protocol is RSN, also commonly referred to as WPA2. The 
+security protocol is important because it determines what tool you use 
+to connect to the network.</p>
+<p>— following image is a sample only —</p>
+<p><a title="Connect to WiFi network in Linux from command line - Scan Wifi Network using iw - blackMORE Ops - 5" href="http://www.blackmoreops.com/wp-content/uploads/2014/09/Connect-to-WiFi-network-in-Linux-from-command-line-Scan-Wifi-Network-using-iw-blackMORE-Ops-51.png" class="grouped_elements" rel="tc-fancybox-group2596"><img class="alignnone wp-image-2629 size-full" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/Connect-to-WiFi-network-in-Linux-from-command-line-Scan-Wifi.png" alt="Connect to WiFi network in Linux from command line - Scan Wifi Network using iw - blackMORE Ops - 5" width="595" height="497"></a></p>
+<p>&nbsp;</p>
+<h3><span id="Step_6_Generate_a_wpawpa2_configuration_file_8211_WiFi_network_from_command_line"><span style="color: #993300;">Step 6: Generate a wpa/wpa2 configuration file – WiFi network from command line<br>
+</span></span></h3>
+<p>Now we will generate a configuration file for <span style="color: #ff0000;"><i>wpa_supplicant</i></span> that contains the pre-shared key (“<span style="color: #ff0000;">passphrase</span>“) for the WiFi network.</p>
+<pre>root@kali:~# wpa_passphrase blackMOREOps &gt;&gt; /etc/wpa_supplicant.conf
+<span style="color: #ff0000;">abcd1234</span>
+root@kali:~#
+(where 'abcd1234' was the Network password)</pre>
+<p><span style="color: #ff0000;"><i>wpa_passphrase</i></span> uses SSID as a string, that means you need to type in the <span style="color: #ff0000;">passphrase</span> for the WiFi network <em><span style="color: #ff0000;">blackMOREOps</span>&nbsp;</em>after you run the command.</p>
+<p><a title="Connect to WiFi network in Linux from command line - Connect to WPA WPA2 WiFi network - blackMORE Ops - 6" href="http://www.blackmoreops.com/wp-content/uploads/2014/09/Connect-to-WiFi-network-in-Linux-from-command-line-Connect-to-WPA-WPA2-WiFi-network-blackMORE-Ops-6.png" class="grouped_elements" rel="tc-fancybox-group2596"><img class="alignnone size-full wp-image-2623" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/Connect-to-WiFi-network-in-Linux-from-command-line-Connect-t.png" alt="Connect to WiFi network in Linux from command line - Connect to WPA WPA2 WiFi network - blackMORE Ops - 6" width="691" height="314"></a></p>
+<p>&nbsp;</p>
+<blockquote><p>Note:&nbsp;If you’re using Ubuntu, Linux Mint, CentOS, Fedora etc. use the command with ‘sudo’ prefix</p></blockquote>
+<p><span style="color: #ff0000;"><i>wpa_passphrase</i></span> will 
+create the necessary configuration entries based on your input. Each new
+ network will be added as a new configuration (it wont replace existing 
+configurations) in the configurations file&nbsp;<span style="color: #ff0000;"><i>/etc/wpa_supplicant.conf</i></span>.</p>
+<pre>root@kali:~# cat /etc/wpa_supplicant.conf 
+# reading passphrase from stdin
+network={
+ ssid="blackMOREOps"
+ #psk="abcd1234"
+ psk=42e1cbd0f7fbf3824393920ea41ad6cc8528957a80a404b24b5e4461a31c820c
+}
+root@kali:~# 
+</pre>
+<p>&nbsp;</p>
+<h3><span id="Step_7_Connect_to_WPAWPA2_WiFi_network_8211_WiFi_network_from_command_line"><span style="color: #993300;">Step 7: Connect to WPA/WPA2 WiFi network – WiFi network from command line<br>
+</span></span></h3>
+<p>Now that we have the configuration file, we can use it to connect to the WiFi network. We will be using <span style="color: #ff0000;"><i>wpa_supplicant</i></span> to connect. Use the following command</p>
+<pre>root@kali:~# wpa_supplicant -B -D wext -i wlan0 -c /etc/wpa_supplicant.conf
+ioctl[SIOCSIWENCODEEXT]: Invalid argument 
+ioctl[SIOCSIWENCODEEXT]: Invalid argument 
+root@kali:~#</pre>
+<p>Where,</p>
+<p><span style="color: #ff0000;">-B</span>&nbsp;means run <span style="color: #ff0000;"><i>wpa_supplicant</i></span> in the background.</p>
+<p><span style="color: #ff0000;">-D</span> specifies the wireless driver. <span style="color: #ff0000;"><i>wext</i></span> is the generic driver.</p>
+<p><span style="color: #ff0000;">-c </span>specifies the path for the configuration file.</p>
+<p>&nbsp;</p>
+<p><a title="Connect to WiFi network in Linux from command line - Connect to WPA WPA2 WiFi network - blackMORE Ops - 7" href="http://www.blackmoreops.com/wp-content/uploads/2014/09/Connect-to-WiFi-network-in-Linux-from-command-line-Connect-to-WPA-WPA2-WiFi-network-blackMORE-Ops-7.png" class="grouped_elements" rel="tc-fancybox-group2596"><img class="alignnone size-full wp-image-2630" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/Connect-to-WiFi-network-in-Linux-from-command-line-Conne_002.png" alt="Connect to WiFi network in Linux from command line - Connect to WPA WPA2 WiFi network - blackMORE Ops - 7" width="679" height="397"></a></p>
+<p>&nbsp;</p>
+<p>Use the <span style="color: #ff0000;"><i>iw</i> </span>command to verify that you are indeed connected to the SSID.</p>
+<pre>root@kali:~# iw wlan0 link
+Connected to 9c:97:00:aa:11:33 (on wlan0)
+&nbsp;&nbsp; &nbsp;SSID: blackMOREOps
+&nbsp;&nbsp; &nbsp;freq: 2412
+&nbsp;&nbsp; &nbsp;RX: 26951 bytes (265 packets)
+&nbsp;&nbsp; &nbsp;TX: 1400 bytes (14 packets)
+&nbsp;&nbsp; &nbsp;signal: -51 dBm
+&nbsp;&nbsp; &nbsp;tx bitrate: 6.5 MBit/s MCS 0
+
+&nbsp;&nbsp; &nbsp;bss flags:&nbsp;&nbsp; &nbsp;short-slot-time
+&nbsp;&nbsp; &nbsp;dtim period:&nbsp;&nbsp; &nbsp;0
+&nbsp;&nbsp; &nbsp;beacon int:&nbsp;&nbsp; &nbsp;100
+</pre>
+<p>&nbsp;</p>
+<h3><span id="Step_8_Get_an_IP_using_dhclient_8211_WiFi_network_from_command_line"><span style="color: #993300;">Step 8: Get an IP using dhclient – WiFi network from command line<br>
+</span></span></h3>
+<p>Until step 7, we’ve spent time connecting to the WiFi network. Now use dhclient to get an IP address by DHCP</p>
+<pre>root@kali:~# dhclient wlan0
+Reloading /etc/samba/smb.conf: smbd only.
+root@kali:~#</pre>
+<p>You can use <span style="color: #ff0000;"><i>ip or ifconfig </i></span>command to verify the IP address assigned by DHCP. The IP address is <span style="color: #ff0000;">10.0.0.4</span> from below.</p>
+<pre>root@kali:~# ip addr show wlan0
+4: wlan0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc mq state UP qlen 1000
+&nbsp;&nbsp;&nbsp; link/ether 00:60:64:37:4a:30 brd ff:ff:ff:ff:ff:ff
+&nbsp;&nbsp;&nbsp; inet 10.0.0.4/24 brd 10.0.0.255 scope global wlan0
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; valid_lft forever preferred_lft forever
+&nbsp;&nbsp;&nbsp; inet6 fe80::260:64ff:fe37:4a30/64 scope link 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; valid_lft forever preferred_lft forever
+root@kali:~# 
+
+(or)
+
+root@kali:~# ifconfig wlan0
+wlan0 Link encap:Ethernet HWaddr 00:60:64:37:4a:30 
+ inet addr:<span style="color: #ff0000;">10.0.0.4</span> Bcast:10.0.0.255 Mask:255.255.255.0
+ inet6 addr: fe80::260:64ff:fe37:4a30/64 Scope:Link
+ UP BROADCAST RUNNING MULTICAST MTU:1500 Metric:1
+ RX packets:23868 errors:0 dropped:0 overruns:0 frame:0
+ TX packets:23502 errors:0 dropped:0 overruns:0 carrier:0
+ collisions:0 txqueuelen:1000 
+ RX bytes:22999066 (21.9 MiB) TX bytes:5776947 (5.5 MiB)
+
+root@kali:~# 
+</pre>
+<p>Add default routing rule.The last configuration step is to make sure that you have the proper routing rules.</p>
+<pre>root@kali:~# ip route show 
+default via 10.0.0.138 dev wlan0 
+10.0.0.0/24 dev wlan0&nbsp; proto kernel&nbsp; scope link&nbsp; src 10.0.0.4 
+</pre>
+<p>&nbsp;</p>
+<p><a title="Connect to WiFi network in Linux from command line - Check Routing and DHCP - blackMORE Ops - 8" href="http://www.blackmoreops.com/wp-content/uploads/2014/09/Connect-to-WiFi-network-in-Linux-from-command-line-Check-Routing-and-DHCP-blackMORE-Ops-8.png" class="grouped_elements" rel="tc-fancybox-group2596"><img class="alignnone size-full wp-image-2632" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/Connect-to-WiFi-network-in-Linux-from-command-line-Check-Rou.png" alt="Connect to WiFi network in Linux from command line - Check Routing and DHCP - blackMORE Ops - 8" width="737" height="347"></a></p>
+<p>&nbsp;</p>
+<h3><span id="Step_9_Test_connectivity_8211_WiFi_network_from_command_line"><span style="color: #993300;">Step 9: Test connectivity – WiFi network from command line<br>
+</span></span></h3>
+<p>Ping Google’s IP to confirm network connection (or you can just browse?)</p>
+<pre>root@kali:~# ping 8.8.8.8
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_req=3 ttl=42 time=265 ms
+64 bytes from 8.8.8.8: icmp_req=4 ttl=42 time=176 ms
+64 bytes from 8.8.8.8: icmp_req=5 ttl=42 time=174 ms
+64 bytes from 8.8.8.8: icmp_req=6 ttl=42 time=174 ms
+^C
+--- 8.8.8.8 ping statistics ---
+6 packets transmitted, 4 received, 33% packet loss, time 5020ms
+rtt min/avg/max/mdev = 174.353/197.683/265.456/39.134 ms
+root@kali:~# 
+</pre>
+<p>&nbsp;</p>
+<h3><span id="Summary"><span style="color: #993300;">Summary</span></span></h3>
+<p>This is a very detailed and long guide. Here is a short summary of all the things you need to do in just few line.</p>
+<pre>root@kali:~# iw dev
+root@kali:~# ip link set wlan0 up
+root@kali:~# iw wlan0 scan
+root@kali:~# wpa_passphrase blackMOREOps &gt;&gt; /etc/wpa_supplicant.conf
+root@kali:~# wpa_supplicant -i wlan0 -c /etc/wpa_supplicant.conf
+root@kali:~# iw wlan0 link
+root@kali:~# dhclient wlan0
+root@kali:~# ping 8.8.8.8
+(Where wlan0 is wifi adapter and blackMOREOps is SSID)
+(Add Routing manually)
+root@kali:~# ip route add default via 10.0.0.138 dev wlan0</pre>
+<p>At the end of it, you should be able to connect to WiFi network. 
+Depending on the Linux distro you are using and how things go, your 
+commands might be slightly different. Edit commands as required to meet 
+your needs.</p>
+<p>Thanks for reading.</p>
+
+<div style="display: block;" id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><span id="Related"><em>Related</em></span></h3>
+<div class="jp-relatedposts-items jp-relatedposts-items-visual"><div class="jp-relatedposts-post jp-relatedposts-post0 jp-relatedposts-post-thumbs" data-post-id="505" data-post-format="false"><a data-position="0" data-origin="2596" rel="nofollow" title="How to fix Wired Network interface &quot;Device not managed&quot; error in Debian or Kali Linux?
+
+Device not managed error actually is an interesting error. When I tested, Device not managed error only happened to Wired Network interfaces (such as eth0 or eth1) in both Debian and Kali Linux. It doesn't seem to happen to wireless network interfaces. When a user connects their Laptop or Computer…" href="http://www.blackmoreops.com/2013/11/25/how-to-fix-wired-network-interface-device-not-managed-error/" class="jp-relatedposts-post-a"><img class="jp-relatedposts-post-img" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/How-to-fix-Wired-Network-interface-is-Unmanaged-error-in-Deb.png" alt="How to fix Wired Network interface " device="" not="" managed"="" error="" in="" debian="" or="" kali="" linux?"="" width="350"></a><h4 class="jp-relatedposts-post-title"><a data-position="0" data-origin="2596" rel="nofollow" title="How to fix Wired Network interface &quot;Device not managed&quot; error in Debian or Kali Linux?
+
+Device not managed error actually is an interesting error. When I tested, Device not managed error only happened to Wired Network interfaces (such as eth0 or eth1) in both Debian and Kali Linux. It doesn't seem to happen to wireless network interfaces. When a user connects their Laptop or Computer…" href="http://www.blackmoreops.com/2013/11/25/how-to-fix-wired-network-interface-device-not-managed-error/" class="jp-relatedposts-post-a">How to fix Wired Network interface "Device not managed" error in Debian or Kali Linux?</a></h4><p class="jp-relatedposts-post-excerpt">Device
+ not managed error actually is an interesting error. When I tested, 
+Device not managed error only happened to Wired Network interfaces (such
+ as eth0 or eth1) in both Debian and Kali Linux. It doesn't seem to 
+happen to wireless network interfaces. When a user connects their Laptop
+ or Computer…</p><p class="jp-relatedposts-post-date">November 25, 2013</p><p class="jp-relatedposts-post-context">In "How to"</p></div><div class="jp-relatedposts-post jp-relatedposts-post1 jp-relatedposts-post-thumbs" data-post-id="1975" data-post-format="false"><a data-position="1" data-origin="2596" rel="nofollow" title="Enable VPN on Kali Linux - fix VPN grayed out problem
+
+Fix VPN grayed out problem and enable VPN on Kali Linux A virtual private network (VPN) extends a private network across a public network, such as the Internet. It enables a computer to send and receive data across shared or public networks as if it is directly connected to the…" href="http://www.blackmoreops.com/2014/06/05/enable-vpn-kali-linux/" class="jp-relatedposts-post-a"><img class="jp-relatedposts-post-img" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/Enable-VPN-on-Kali-Linux-blackMORE-Ops-0.jpg" alt="Enable VPN on Kali Linux - fix VPN grayed out problem" width="350"></a><h4 class="jp-relatedposts-post-title"><a data-position="1" data-origin="2596" rel="nofollow" title="Enable VPN on Kali Linux - fix VPN grayed out problem
+
+Fix VPN grayed out problem and enable VPN on Kali Linux A virtual private network (VPN) extends a private network across a public network, such as the Internet. It enables a computer to send and receive data across shared or public networks as if it is directly connected to the…" href="http://www.blackmoreops.com/2014/06/05/enable-vpn-kali-linux/" class="jp-relatedposts-post-a">Enable VPN on Kali Linux - fix VPN grayed out problem</a></h4><p class="jp-relatedposts-post-excerpt">Fix
+ VPN grayed out problem and enable VPN on Kali Linux A virtual private 
+network (VPN) extends a private network across a public network, such as
+ the Internet. It enables a computer to send and receive data across 
+shared or public networks as if it is directly connected to the…</p><p class="jp-relatedposts-post-date">June 5, 2014</p><p class="jp-relatedposts-post-context">In "How to"</p></div><div class="jp-relatedposts-post jp-relatedposts-post2 jp-relatedposts-post-thumbs" data-post-id="3133" data-post-format="false"><a data-position="2" data-origin="2596" rel="nofollow" title="Cracking Wifi WPA/WPA2 passwords using pyrit cowpatty in Kali Linux
+
+Cracking Wifi WPA/WPA2 passwords using pyrit cowpatty– with cuda or calpp in Kali Linux There are just too many guides on Cracking Wifi WPA/WPA2 passwords using different methods. Everyone has their own take on it. Personally, I think there’s no right or wrong way of cracking a Wireless Access Point.…" href="http://www.blackmoreops.com/2014/03/10/cracking-wifi-wpawpa2-passwords-using-pyrit-cowpatty/" class="jp-relatedposts-post-a"><img class="jp-relatedposts-post-img" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/16-Cracking-Wifi-WPAWPA2-passwords-using-pyrit-and-cowpatty-.jpg" alt="Cracking Wifi WPA/WPA2 passwords using pyrit cowpatty in Kali Linux" width="350"></a><h4 class="jp-relatedposts-post-title"><a data-position="2" data-origin="2596" rel="nofollow" title="Cracking Wifi WPA/WPA2 passwords using pyrit cowpatty in Kali Linux
+
+Cracking Wifi WPA/WPA2 passwords using pyrit cowpatty– with cuda or calpp in Kali Linux There are just too many guides on Cracking Wifi WPA/WPA2 passwords using different methods. Everyone has their own take on it. Personally, I think there’s no right or wrong way of cracking a Wireless Access Point.…" href="http://www.blackmoreops.com/2014/03/10/cracking-wifi-wpawpa2-passwords-using-pyrit-cowpatty/" class="jp-relatedposts-post-a">Cracking Wifi WPA/WPA2 passwords using pyrit cowpatty in Kali Linux</a></h4><p class="jp-relatedposts-post-excerpt">Cracking
+ Wifi WPA/WPA2 passwords using pyrit cowpatty– with cuda or calpp in 
+Kali Linux There are just too many guides on Cracking Wifi WPA/WPA2 
+passwords using different methods. Everyone has their own take on it. 
+Personally, I think there’s no right or wrong way of cracking a Wireless
+ Access Point.…</p><p class="jp-relatedposts-post-date">March 10, 2014</p><p class="jp-relatedposts-post-context">In "Cracking"</p></div></div></div>                        </section><!-- .entry-content -->
+
+        <footer class="entry-meta"><hr class="featurette-divider"><div class="author-info"><div class="row-fluid"><div class="comment-avatar author-avatar span2"><img alt="" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/8d1dad160f2ad668836e6a2315b53315_002.jpeg" class="avatar avatar-100 photo" width="100" height="100"></div> <div class="author-description span10"><h3>About blackMORE Ops</h3><p>blackMORE
+ Ops is dedicated to How to, Guides, Security features and Tips and 
+Tricks for Linux OS. Thank you for visiting us and follow us here <a href="http://www.blackmoreops.com/">www.blackmoreops.com</a>.</p><div class="author-link"><a href="http://www.blackmoreops.com/author/admin/" rel="author">View all posts by blackMORE Ops <span class="meta-nav">→</span></a></div></div></div></div></footer>                                    </article>
+                                
+                            
+                        
+                    <hr class="featurette-divider __after_loop">
+<div id="comments" class="comments-area">
+						
+		<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/#respond" style="display:none;">Cancel reply</a></small></h3>
+			<div id="commentform" class="comment-form">
+				<iframe src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/a.html" allowtransparency="false" style="width: 100%; height: 55px; border: 0px none;" name="jetpack_remote_comment" id="jetpack_remote_comment" scrolling="no" frameborder="0"></iframe>
+			<input value="1423949759087" name="ak_js" id="ak_js" type="hidden"></div>
+		</div>
+
+		
+		<input name="comment_parent" id="comment_parent" value="" type="hidden">
+
+		<h2 id="tc-comment-title" class="comments-title">15 thoughts on “<span>Connect to WiFi network from command line in Linux</span>”</h2>              <ul class="commentlist">
+                        <li class="comment even thread-even depth-1" id="li-comment-1785">
+          
+            <article id="comment-1785" class="comment"><div class="row-fluid"><div class="comment-avatar span2"><img alt="" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/92b9ca3c749577d6b650819124b654e9.png" class="avatar avatar-80 photo" width="80" height="80"></div><div class="span10"><div class="reply"><a class="comment-reply-link btn btn-small" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/?replytocom=1785#respond" onclick='return addComment.moveForm( "li-comment-1785", "1785", "respond", "2596" )' aria-label="Reply to tachyon1">Reply <span>↓</span></a></div> <header class="comment-meta comment-author vcard"><cite class="fn"><a href="http://tachyon1.wordpress.com/" rel="external nofollow" class="url">tachyon1</a>  </cite> <a class="comment-date" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/#comment-1785"><time datetime="2014-09-20T01:45:10+00:00">September 20, 2014 at 1:45 am</time></a></header>  <section class="comment-content comment"><p>This is a really nice resource and it’s especially great that you made a best effort to keep it distro agnostic. Thanks!</p>
+<p>The only thing I would add is a mention of the Network Manager 
+command line tools. Since most distro’s use NM these days it’s nice to 
+be able to work within that system from the command line too.</p>
+</section></div></div></article>          <!-- #comment-## -->
+        <ul class="children">
+        <li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-1798">
+          
+            <article id="comment-1798" class="comment"><div class="row-fluid"><div class="comment-avatar span2"><img alt="" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/8d1dad160f2ad668836e6a2315b53315.jpeg" class="avatar avatar-80 photo" width="80" height="80"></div><div class="span10"><div class="reply"><a class="comment-reply-link btn btn-small" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/?replytocom=1798#respond" onclick='return addComment.moveForm( "li-comment-1798", "1798", "respond", "2596" )' aria-label="Reply to blackMORE Ops">Reply <span>↓</span></a></div> <header class="comment-meta comment-author vcard"><cite class="fn"><a href="http://www.blackmoreops.com/" rel="external nofollow" class="url">blackMORE Ops</a> <span> Post author</span> </cite> <a class="comment-date" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/#comment-1798"><time datetime="2014-09-21T18:39:33+00:00">September 21, 2014 at 6:39 pm</time></a></header>  <section class="comment-content comment"><p>Thanks for the idea tachyon1.<br>
+I was thinking along the line that once you’ve got your Internet sorted,
+ you can use NM or Wicd … I will try to write a separate guide on NM. 
+Cheers,<br>
+-BMO</p>
+</section></div></div></article>          <!-- #comment-## -->
+        </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+        <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1787">
+          
+            <article id="comment-1787" class="comment"><div class="row-fluid"><div class="comment-avatar span2"><img alt="" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/a13ce6338c214213933f4a15603b532b.jpeg" class="avatar avatar-80 photo" width="80" height="80"></div><div class="span10"><div class="reply"><a class="comment-reply-link btn btn-small" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/?replytocom=1787#respond" onclick='return addComment.moveForm( "li-comment-1787", "1787", "respond", "2596" )' aria-label="Reply to Tomas">Reply <span>↓</span></a></div> <header class="comment-meta comment-author vcard"><cite class="fn">Tomas  </cite> <a class="comment-date" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/#comment-1787"><time datetime="2014-09-20T04:47:30+00:00">September 20, 2014 at 4:47 am</time></a></header>  <section class="comment-content comment"><p>My
+ experience tells to ping a domain name rather than an IP address, 
+because it instantly shows if your DNS settings are correct or not, 
+while IP ping works most of the time after connecting to a WiFi :)</p>
+</section></div></div></article>          <!-- #comment-## -->
+        <ul class="children">
+        <li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-1797">
+          
+            <article id="comment-1797" class="comment"><div class="row-fluid"><div class="comment-avatar span2"><img alt="" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/8d1dad160f2ad668836e6a2315b53315.jpeg" class="avatar avatar-80 photo" width="80" height="80"></div><div class="span10"><div class="reply"><a class="comment-reply-link btn btn-small" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/?replytocom=1797#respond" onclick='return addComment.moveForm( "li-comment-1797", "1797", "respond", "2596" )' aria-label="Reply to blackMORE Ops">Reply <span>↓</span></a></div> <header class="comment-meta comment-author vcard"><cite class="fn"><a href="http://www.blackmoreops.com/" rel="external nofollow" class="url">blackMORE Ops</a> <span> Post author</span> </cite> <a class="comment-date" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/#comment-1797"><time datetime="2014-09-21T18:36:48+00:00">September 21, 2014 at 6:36 pm</time></a></header>  <section class="comment-content comment"><p>Hi Tomas,<br>
+You’re right, I was thinking of adding a section for DNS … I will include your idea + DNS settings. ta,<br>
+-BMO</p>
+</section></div></div></article>          <!-- #comment-## -->
+        </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+        <li class="comment even thread-even depth-1" id="li-comment-1873">
+          
+            <article id="comment-1873" class="comment"><div class="row-fluid"><div class="comment-avatar span2"><img alt="" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/be954ba93c6586f72df957a1841079bf.png" class="avatar avatar-80 photo" width="80" height="80"></div><div class="span10"><div class="reply"><a class="comment-reply-link btn btn-small" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/?replytocom=1873#respond" onclick='return addComment.moveForm( "li-comment-1873", "1873", "respond", "2596" )' aria-label="Reply to nonaned">Reply <span>↓</span></a></div> <header class="comment-meta comment-author vcard"><cite class="fn">nonaned  </cite> <a class="comment-date" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/#comment-1873"><time datetime="2014-10-06T18:50:11+00:00">October 6, 2014 at 6:50 pm</time></a></header>  <section class="comment-content comment"><p>Wanna take a look at ceni?<br>
+<a href="http://manual.aptosid.com/de/inet-ceni-de.htm" rel="nofollow">http://manual.aptosid.com/de/inet-ceni-de.htm</a></p>
+</section></div></div></article>          <!-- #comment-## -->
+        </li><!-- #comment-## -->
+        <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1902">
+          
+            <article id="comment-1902" class="comment"><div class="row-fluid"><div class="comment-avatar span2"><img alt="" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/eb1f7b40635e462c312bcf3b2bc8c1f5.jpeg" class="avatar avatar-80 photo" width="80" height="80"></div><div class="span10"><div class="reply"><a class="comment-reply-link btn btn-small" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/?replytocom=1902#respond" onclick='return addComment.moveForm( "li-comment-1902", "1902", "respond", "2596" )' aria-label="Reply to Bavarian">Reply <span>↓</span></a></div> <header class="comment-meta comment-author vcard"><cite class="fn"><a href="http://hyusnev.wordpress.com/" rel="external nofollow" class="url">Bavarian</a>  </cite> <a class="comment-date" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/#comment-1902"><time datetime="2014-10-13T03:15:14+00:00">October 13, 2014 at 3:15 am</time></a></header>  <section class="comment-content comment"><p>Thank you dude,it’s very useful.</p>
+</section></div></div></article>          <!-- #comment-## -->
+        </li><!-- #comment-## -->
+        <li class="comment even thread-even depth-1" id="li-comment-2033">
+          
+            <article id="comment-2033" class="comment"><div class="row-fluid"><div class="comment-avatar span2"><img alt="" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/961a60c45c08359dcf5cc7c7946afd21.png" class="avatar avatar-80 photo" width="80" height="80"></div><div class="span10"><div class="reply"><a class="comment-reply-link btn btn-small" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/?replytocom=2033#respond" onclick='return addComment.moveForm( "li-comment-2033", "2033", "respond", "2596" )' aria-label="Reply to syntropic">Reply <span>↓</span></a></div> <header class="comment-meta comment-author vcard"><cite class="fn">syntropic  </cite> <a class="comment-date" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/#comment-2033"><time datetime="2014-11-12T15:36:42+00:00">November 12, 2014 at 3:36 pm</time></a></header>  <section class="comment-content comment"><p>you
+ have really upped the knowledge level/detail since this site started… 
+great job…  I think it is great you focused on iw in this post.</p>
+<p>You should now try and do a primer on “ip” (as in ip link, ip addr, 
+ip route, ip tunnel)… that is a serious headache to try and figure out– 
+even if taken in small chunks!</p>
+<p>One thing I am trying to right now is figure out how to create a bash
+ script that creates a virtual wireless monitor, then changes the mac 
+address on each to an identical new address.  Part of figuring this out 
+(while learning as much as possible), is to use the “iw” command instead
+ of “airmon-ng”.  </p>
+<p>Essentially, all airmon-ng really does is create an additional 
+(virtual?) wireless interface using the same hardware NIC.  So you can 
+create this new interface with “iw dev wlan1 interface add mon1 type 
+monitor” at the command line. (with “wlan1″ being (for me) my Alfa 
+wireless USB adapter).  That command adds an interface called “mon1″ and
+ sets it to monitor mode (which is the same as “PROMISC” when running 
+ifconfig).  </p>
+<p>I wanted to learn this because when you use Reaver or Bully, you have
+ to make sure that you are spoofing the actual hardware device as well 
+as the virtual device (which is typically created using airmon-ng).  I 
+think you actually mention this in an earlier post.  So anyway, I am 
+trying to write a little bash script which creates mon1 from wlan1, then
+ each to the same new mac address  This way I don’t have to execute 10 
+different shell commands before I start running reaver/bully.</p>
+<p>Anyway… great job!</p>
+</section></div></div></article>          <!-- #comment-## -->
+        </li><!-- #comment-## -->
+        <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-2067">
+          
+            <article id="comment-2067" class="comment"><div class="row-fluid"><div class="comment-avatar span2"><img alt="" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/18aa36907cbba06e12aa78269fc2831f.png" class="avatar avatar-80 photo" width="80" height="80"></div><div class="span10"><div class="reply"><a class="comment-reply-link btn btn-small" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/?replytocom=2067#respond" onclick='return addComment.moveForm( "li-comment-2067", "2067", "respond", "2596" )' aria-label="Reply to Lakshmi narendra">Reply <span>↓</span></a></div> <header class="comment-meta comment-author vcard"><cite class="fn">Lakshmi narendra  </cite> <a class="comment-date" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/#comment-2067"><time datetime="2014-11-21T03:05:31+00:00">November 21, 2014 at 3:05 am</time></a></header>  <section class="comment-content comment"><p>Thank you very much. Its very helpful even for newbie like me.</p>
+</section></div></div></article>          <!-- #comment-## -->
+        </li><!-- #comment-## -->
+        <li class="comment even thread-even depth-1" id="li-comment-2239">
+          
+            <article id="comment-2239" class="comment"><div class="row-fluid"><div class="comment-avatar span2"><img alt="" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/5feed90061dcb94a5d835ada69a99571.png" class="avatar avatar-80 photo" width="80" height="80"></div><div class="span10"><div class="reply"><a class="comment-reply-link btn btn-small" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/?replytocom=2239#respond" onclick='return addComment.moveForm( "li-comment-2239", "2239", "respond", "2596" )' aria-label="Reply to vinay gupta">Reply <span>↓</span></a></div> <header class="comment-meta comment-author vcard"><cite class="fn">vinay gupta  </cite> <a class="comment-date" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/#comment-2239"><time datetime="2014-12-22T23:25:41+00:00">December 22, 2014 at 11:25 pm</time></a></header>  <section class="comment-content comment"><p>i
+ am setting the ip link but the state is not changing to up its still 
+down i dont know what to do can u please help me i am running kali linux
+ on vm player</p>
+</section></div></div></article>          <!-- #comment-## -->
+        </li><!-- #comment-## -->
+        <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-2346">
+          
+            <article id="comment-2346" class="comment"><div class="row-fluid"><div class="comment-avatar span2"><img alt="" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/cbb9772fa034506e2d153feb4477d579.jpeg" class="avatar avatar-80 photo" width="80" height="80"></div><div class="span10"><div class="reply"><a class="comment-reply-link btn btn-small" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/?replytocom=2346#respond" onclick='return addComment.moveForm( "li-comment-2346", "2346", "respond", "2596" )' aria-label="Reply to Gayatri">Reply <span>↓</span></a></div> <header class="comment-meta comment-author vcard"><cite class="fn">Gayatri  </cite> <a class="comment-date" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/#comment-2346"><time datetime="2015-01-05T21:01:22+00:00">January 5, 2015 at 9:01 pm</time></a></header>  <section class="comment-content comment"><p>Tutorial
+ is nice but what about nl80211 not found? What does that mean? I am 
+using opensuse 12.3 and my phone as portable wifi hotspot which is using
+ WPA2</p>
+</section></div></div></article>          <!-- #comment-## -->
+        </li><!-- #comment-## -->
+        <li class="comment even thread-even depth-1" id="li-comment-2439">
+          
+            <article id="comment-2439" class="comment"><div class="row-fluid"><div class="comment-avatar span2"><img alt="" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/061d42bcf6241d452cf320daf366630b.png" class="avatar avatar-80 photo" width="80" height="80"></div><div class="span10"><div class="reply"><a class="comment-reply-link btn btn-small" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/?replytocom=2439#respond" onclick='return addComment.moveForm( "li-comment-2439", "2439", "respond", "2596" )' aria-label="Reply to dori">Reply <span>↓</span></a></div> <header class="comment-meta comment-author vcard"><cite class="fn"><a href="http://gravatar.com/doricoren" rel="external nofollow" class="url">dori</a>  </cite> <a class="comment-date" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/#comment-2439"><time datetime="2015-01-15T06:04:47+00:00">January 15, 2015 at 6:04 am</time></a></header>  <section class="comment-content comment"><p>Hello
+ and thanks for the tutorial. I did everything as written here, but when
+ I ran step 7, the screen was filled with error messages and the device 
+(Rpi running Kali 1.0.9 w/tft support) didn’t respond to keyboard. had 
+to open ssh and reboot, and never got wifi access. on the other hand, 
+when I tried to connect to a public insecure wifi, the connection was 
+automatic, I didn’t do anything and it worked.<br>
+if anyone has an idea what is wrong, I would appreciate it.<br>
+Thanks again!</p>
+</section></div></div></article>          <!-- #comment-## -->
+        </li><!-- #comment-## -->
+        <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-2513">
+          
+            <article id="comment-2513" class="comment"><div class="row-fluid"><div class="comment-avatar span2"><img alt="" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/511ed33c7c9330625ecc8f4e1d584981.png" class="avatar avatar-80 photo" width="80" height="80"></div><div class="span10"><div class="reply"><a class="comment-reply-link btn btn-small" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/?replytocom=2513#respond" onclick='return addComment.moveForm( "li-comment-2513", "2513", "respond", "2596" )' aria-label="Reply to Pisuke">Reply <span>↓</span></a></div> <header class="comment-meta comment-author vcard"><cite class="fn">Pisuke  </cite> <a class="comment-date" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/#comment-2513"><time datetime="2015-01-25T01:28:04+00:00">January 25, 2015 at 1:28 am</time></a></header>  <section class="comment-content comment"><p>What if ip fails to bring up your wireless device. Where may the problem lie?</p>
+<p>I’m using CentOs 6.5, with an Intel Pro Wireless 3945ABG. The iwl3945 driver is installed and loaded as module into the kernel.</p>
+<p>Here is the output when I follow your tutorial:</p>
+<p>$ iw dev<br>
+phy#0<br>
+	Interface wlan0<br>
+		ifindex 2<br>
+		wdev 0x1<br>
+		addr 00:18:de:30:d3:97<br>
+		type managed</p>
+<p>$ ip link show wlan0<br>
+2: wlan0:  mtu 1500 qdisc mq state DOWN qlen 1000<br>
+    link/ether 00:18:de:30:d3:97 brd ff:ff:ff:ff:ff:ff</p>
+<p># ip link set wlan0 up<br>
+# ip link show wlan0<br>
+2: wlan0:  mtu 1500 qdisc mq state DOWN qlen 1000<br>
+    link/ether 00:18:de:30:d3:97 brd ff:ff:ff:ff:ff:ff</p>
+</section></div></div></article>          <!-- #comment-## -->
+        <ul class="children">
+        <li class="comment even depth-2" id="li-comment-2569">
+          
+            <article id="comment-2569" class="comment"><div class="row-fluid"><div class="comment-avatar span2"><img alt="" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/94929209cc874a616d303a4893ea3d59.png" class="avatar avatar-80 photo" width="80" height="80"></div><div class="span10"><div class="reply"><a class="comment-reply-link btn btn-small" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/?replytocom=2569#respond" onclick='return addComment.moveForm( "li-comment-2569", "2569", "respond", "2596" )' aria-label="Reply to Pr0J3ct-SD6">Reply <span>↓</span></a></div> <header class="comment-meta comment-author vcard"><cite class="fn">Pr0J3ct-SD6  </cite> <a class="comment-date" href="http://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux/#comment-2569"><time datetime="2015-02-08T14:40:24+00:00">February 8, 2015 at 2:40 pm</time></a></header>  <section class="comment-content comment"><p>I am having the same problem…. PLEASE HELP!!!!</p>
+</section></div></div></article>          <!-- #comment-## -->
+        </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+        <li class="pingback odd alt thread-even depth-1" id="comment-2570">
+          <article id="comment-2570" class="comment">
+            <p>Pingback: <a href="http://dluat.com/cannot-connect-to-wifi/" rel="external nofollow" class="url">Cannot connect to wifi | DL-UAT</a> </p>
+          </article>
+        </li><!-- #comment-## -->
+        <li class="pingback even thread-odd thread-alt depth-1" id="comment-2571">
+          <article id="comment-2571" class="comment">
+            <p>Pingback: <a href="http://dluat.com/cyborg-cannot-connect-to-wifi/" rel="external nofollow" class="url">Cyborg cannot connect to wifi | DL-UAT</a> </p>
+          </article>
+        </li><!-- #comment-## -->
+              </ul><!-- .commentlist -->
+            </div><!-- #comments .comments-area -->
+        
+          <hr class="featurette-divider __after_loop">
+          <nav id="nav-below" class="navigation" role="navigation">
+
+              <h3 class="assistive-text">
+                Post navigation              </h3>
+
+              <ul class="pager">
+                                  <li class="previous">
+                    <span class="nav-previous">
+                      <a href="http://www.blackmoreops.com/2014/08/29/fix-linux-display-issue-find-horizsync-vertrefresh-rates/" rel="prev"><span class="meta-nav">←</span> Find HorizSync VertRefresh rates to fix Linux display issue – Why my display is stuck at 640×480?</a>                    </span>
+                  </li>
+                                                  <li class="next">
+                    <span class="nav-next">
+                        <a href="http://www.blackmoreops.com/2014/09/18/how-to-check-loaded-and-compiled-modules-in-httpd-in-linux/" rel="next">How to check loaded and compiled modules in HTTPD in Linux? <span class="meta-nav">→</span></a>                    </span>
+                  </li>
+                              </ul>
+
+          </nav><!-- #nav-below .navigation -->
+
+        
+        
+                </div><!--.article-container -->
+
+                    
+        <div class="span3 right tc-sidebar">
+           <div id="right" class="widget-area" role="complementary">
+                                                      <aside id="adinj-26" class="widget adinjwidget">
+<!--Ad Injection mfunc mode ad include code--><!--mfunc include_once('/home/blackmor/public_html/wp-content/plugins/ad-injection/adshow.php') --><!--/mfunc-->
+
+<!--Ad Injection mfunc mode ad code--><!--mfunc adshow_display_ad_file_v2(array('ad_widget_26_1.txt'), array(100), array('align' => '', 'clear' => '', 'margin_top' => '20', 'margin_bottom' => '20', 'padding_top' => '', 'padding_bottom' => ''), array(), array()) -->
+
+<div style="margin-top:20px;margin-bottom:20px;"> <script id="mNCC" language="javascript">medianet_width='336';medianet_height='280';medianet_crid='853555287';</script>  <script id="mNSC" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/nmedianet.js" language="javascript"></script><iframe id="_mN_gpt_853555287" marginheight="0" marginwidth="0" scrolling="no" width="336" frameborder="0" height="280"></iframe><script language="javascript" type="text/javascript" id="_mN_dy_853555287" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/fcmdynet_002.js"></script><iframe marginwidth="0" marginheight="0" id="_mN_main_853555287_1" style="display:none;" scrolling="NO" width="336" frameborder="0" height="280"></iframe></div><!--/mfunc-->
+</aside><aside id="text-2" class="widget widget_text"><h3 class="widget-title">Google Site Search</h3>			<div class="textwidget"><p><script>(function(){var cx='008391278839406393588:ex4y4eowfiq';var gcse=document.createElement('script');gcse.type='text/javascript';gcse.async=true;gcse.src=(document.location.protocol=='https:'?'https:':'http:')+'//www.google.com/cse/cse.js?cx='+cx;var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gcse,s);})();</script><br>
+<div id="___gcse_0"><div class="gsc-control-cse gsc-control-cse-en"><div dir="ltr" class="gsc-control-wrapper-cse"><form accept-charset="utf-8" class="gsc-search-box gsc-search-box-tools"><table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody><tr><td class="gsc-input"><div id="gsc-iw-id1" class="gsc-input-box"><table class="gstl_50 " id="gs_id50" style="width: 100%; padding: 0px;" cellpadding="0" cellspacing="0"><tbody><tr><td class="gsib_a" id="gs_tti50"><input spellcheck="false" dir="ltr" id="gsc-i-id1" style="width: 100%; padding: 0px; border: medium none; margin: 0px; height: auto; outline: medium none; background: url(&quot;http://www.google.com/cse/intl/en/images/google_custom_search_watermark.gif&quot;) no-repeat scroll left center rgb(255, 255, 255);" title="search" name="search" class="gsc-input" size="10" autocomplete="off" type="text"></td><td class="gsib_b"><div dir="ltr" id="gs_st50" class="gsst_b"><a style="display: none;" href="javascript:void(0)" class="gsst_a"><span id="gs_cb50" class="gscb_a">×</span></a></div></td></tr></tbody></table></div><input id="bgresponse" name="bgresponse" type="hidden"></td><td class="gsc-search-button"><input title="search" class="gsc-search-button gsc-search-button-v2" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/search_box_icon.png" type="image"></td><td class="gsc-clear-button"><div title="clear results" class="gsc-clear-button">&nbsp;</div></td></tr></tbody></table><table class="gsc-branding" cellpadding="0" cellspacing="0"><tbody><tr><td class="gsc-branding-user-defined"></td><td class="gsc-branding-text"><div class="gsc-branding-text">powered by</div></td><td class="gsc-branding-img"><img class="gsc-branding-img" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/small-logo.png"></td></tr></tbody></table></form><div class="gsc-results-wrapper-overlay"><div tabindex="0" class="gsc-results-close-btn"></div><div class="gsc-tabsAreaInvisible"><div class="gsc-tabHeader gsc-inline-block gsc-tabhActive">Custom Search</div><span class="gs-spacer"> </span></div><div class="gsc-tabsAreaInvisible"></div><div class="gsc-above-wrapper-area-invisible"><table class="gsc-above-wrapper-area-container" cellpadding="0" cellspacing="0"><tbody><tr><td class="gsc-result-info-container"><div class="gsc-result-info-invisible"></div></td><td class="gsc-orderby-container"><div class="gsc-orderby-invisible"><div class="gsc-orderby-label gsc-inline-block">Sort by:</div><div class="gsc-option-menu-container gsc-inline-block"><div class="gsc-selected-option-container gsc-inline-block"><div class="gsc-selected-option">Relevance</div><div class="gsc-option-selector"></div></div><div class="gsc-option-menu-invisible"><div class="gsc-option-menu-item gsc-option-menu-item-highlighted"><div class="gsc-option">Relevance</div></div><div class="gsc-option-menu-item"><div class="gsc-option">Date</div></div></div></div></div></td></tr></tbody></table></div><div class="gsc-adBlockInvisible"></div><div class="gsc-wrapper"><div class="gsc-adBlockInvisible"></div><div class="gsc-resultsbox-invisible"><div class="gsc-resultsRoot gsc-tabData gsc-tabdActive"><table class="gsc-resultsHeader" cellpadding="0" cellspacing="0"><tbody><tr><td class="gsc-twiddleRegionCell"><div class="gsc-twiddle"><div class="gsc-title">Web</div></div><div class="gsc-stats"></div><div class="gsc-results-selector gsc-all-results-active"><div title="show one result" class="gsc-result-selector gsc-one-result">&nbsp;</div><div title="show more results" class="gsc-result-selector gsc-more-results">&nbsp;</div><div title="show all results" class="gsc-result-selector gsc-all-results">&nbsp;</div></div></td><td class="gsc-configLabelCell"></td></tr></tbody></table><div><div class="gsc-expansionArea"></div></div></div></div></div></div><div tabindex="0" class="gsc-modal-background-image"></div></div></div></div></p>
+</div>
+		</aside>		<aside id="recent-posts-3" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+					<li>
+				<a href="http://www.blackmoreops.com/2015/02/14/linux-file-system-hierarchy/">Linux file system hierarchy</a>
+						</li>
+					<li>
+				<a href="http://www.blackmoreops.com/2015/02/12/kali-linux-1-1-0-kernel-3-18-install-proprietary-nvidia-driver/">Kali Linux 1.1.0 kernel 3.18 – Install proprietary NVIDIA driver – NVIDIA Accelerated Linux Graphics Driver</a>
+						</li>
+					<li>
+				<a href="http://www.blackmoreops.com/2015/01/12/introducing-kali-linux-nethunter-supported-devices/">Introducing Kali Linux NetHunter and NetHunter supported devices</a>
+						</li>
+					<li>
+				<a href="http://www.blackmoreops.com/2015/01/08/wordpress-40-denial-of-service-attack-proof-of-concept-explained/">Denial of Service Attack Proof of Concept PHP Exploit for &lt;=4.0 WordPress DoS Attack – CVE-2014-9034</a>
+						</li>
+				</ul>
+		</aside><aside id="adinj-14" class="widget adinjwidget">
+<!--Ad Injection mfunc mode ad include code--><!--mfunc include_once('/home/blackmor/public_html/wp-content/plugins/ad-injection/adshow.php') --><!--/mfunc-->
+
+<!--Ad Injection mfunc mode ad code--><!--mfunc adshow_display_ad_file_v2(array('ad_widget_14_1.txt'), array(100), array('align' => '', 'clear' => '', 'margin_top' => '', 'margin_bottom' => '', 'padding_top' => '', 'padding_bottom' => ''), array(), array()) -->
+<script async="" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/adsbygoogle.js"></script>
+<!-- 300x600 - Large Skyscraper -->
+<ins data-adsbygoogle-status="done" class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-5985721093179725" data-ad-slot="2328471493"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><ins id="aswift_1_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;" scrolling="no" width="300" frameborder="0" height="600"></iframe></ins></ins></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script><!--/mfunc-->
+</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Chander Mohan</span> on <a href="http://www.blackmoreops.com/2015/01/12/introducing-kali-linux-nethunter-supported-devices/#comment-2602">Introducing Kali Linux NetHunter and NetHunter supported devices</a></li><li class="recentcomments"><span class="comment-author-link">Danilo</span> on <a href="http://www.blackmoreops.com/2013/10/30/add-official-kali-linux-repositories/#comment-2601">How to add official Kali Linux Repositories?</a></li><li class="recentcomments"><span class="comment-author-link">CyBeR570</span> on <a href="http://www.blackmoreops.com/2014/03/10/cracking-wifi-wpawpa2-passwords-using-pyrit-cowpatty/#comment-2600">Cracking Wifi WPA/WPA2 passwords using pyrit cowpatty in Kali Linux</a></li><li class="recentcomments"><span class="comment-author-link"><a href="http://kali.jaysh.nl/?p=73" rel="external nofollow" class="url">Bronnen | Kali Linux</a></span> on <a href="http://www.blackmoreops.com/2014/04/08/detailed-guide-installing-kali-linux-on-virtualbox/#comment-2599">A detailed guide on installing Kali Linux on VirtualBox</a></li></ul></aside><aside id="adinj-27" class="widget adinjwidget">
+<!--Ad Injection mfunc mode ad include code--><!--mfunc include_once('/home/blackmor/public_html/wp-content/plugins/ad-injection/adshow.php') --><!--/mfunc--><div style="margin-top:20px;"><a href="https://www.privateinternetaccess.com/pages/buy-vpn/blackops" title="Buy VPN"><img src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/PIA-300x250-01-Final.html" alt="Buy VPN" border="0"></a></div> </aside></div></div></div></div></div> <footer id="footer" class=""><div class="container footer-widgets "><div class="row widget-area" role="complementary"><div id="footer_one" class="span4"> <aside id="archives-3" class="widget widget_archive"><h3 class="widget-title">Archives</h3><ul><li><a href="http://www.blackmoreops.com/2015/02/">February 2015</a>&nbsp;(2)</li><li><a href="http://www.blackmoreops.com/2015/01/">January 2015</a>&nbsp;(2)</li><li><a href="http://www.blackmoreops.com/2014/12/">December 2014</a>&nbsp;(7)</li><li><a href="http://www.blackmoreops.com/2014/11/">November 2014</a>&nbsp;(3)</li><li><a href="http://www.blackmoreops.com/2014/10/">October 2014</a>&nbsp;(4)</li><li><a href="http://www.blackmoreops.com/2014/09/">September 2014</a>&nbsp;(5)</li><li><a href="http://www.blackmoreops.com/2014/08/">August 2014</a>&nbsp;(9)</li><li><a href="http://www.blackmoreops.com/2014/07/">July 2014</a>&nbsp;(2)</li><li><a href="http://www.blackmoreops.com/2014/06/">June 2014</a>&nbsp;(10)</li><li><a href="http://www.blackmoreops.com/2014/04/">April 2014</a>&nbsp;(2)</li><li><a href="http://www.blackmoreops.com/2014/03/">March 2014</a>&nbsp;(8)</li><li><a href="http://www.blackmoreops.com/2014/02/">February 2014</a>&nbsp;(6)</li><li><a href="http://www.blackmoreops.com/2014/01/">January 2014</a>&nbsp;(12)</li><li><a href="http://www.blackmoreops.com/2013/12/">December 2013</a>&nbsp;(10)</li><li><a href="http://www.blackmoreops.com/2013/11/">November 2013</a>&nbsp;(12)</li><li><a href="http://www.blackmoreops.com/2013/10/">October 2013</a>&nbsp;(29)</li></ul> </aside></div><div id="footer_two" class="span4"> <aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3><ul><li class="cat-item cat-item-125"><a href="http://www.blackmoreops.com/category/bios/" title="BIOS is Basic Input/Output System.  Posts related to BIOS will be listed under this category. ">BIOS</a> (1)</li><li class="cat-item cat-item-116"><a href="http://www.blackmoreops.com/category/browser/" title="Mozilla Firefox, Google Chrome etc.  Posts related to Browsers such as Google Chrome, Firefox, IceWeasel in  different Linux will be listed under this category. ">Browser</a> (5)</li><li class="cat-item cat-item-244"><a href="http://www.blackmoreops.com/category/cracking/">Cracking</a> (3)</li><li class="cat-item cat-item-275"><a href="http://www.blackmoreops.com/category/data-recovery/">Data Recovery</a> (1)</li><li class="cat-item cat-item-218"><a href="http://www.blackmoreops.com/category/ddos/">DDOS</a> (1)</li><li class="cat-item cat-item-258"><a href="http://www.blackmoreops.com/category/denial-of-service/">Denial-of-service</a> (2)</li><li class="cat-item cat-item-223"><a href="http://www.blackmoreops.com/category/driver/">Driver</a> (2)</li><li class="cat-item cat-item-245"><a href="http://www.blackmoreops.com/category/hacking/">Hacking</a> (4)</li><li class="cat-item cat-item-186"><a href="http://www.blackmoreops.com/category/hashcat/">Hashcat</a> (1)</li><li class="cat-item cat-item-41"><a href="http://www.blackmoreops.com/category/how-to/" title="A how-to is an informal, often short, description of how to accomplish a specific task. A how-to is usually meant to help non-experts, may leave out details that are only important to experts, and may also be greatly simplified from an overall discussion of the topic.  ">How to</a> (89)</li><li class="cat-item cat-item-3"><a href="http://www.blackmoreops.com/category/linux/" title="Linux is a Unix-like and POSIX-compliant computer operating system assembled under the model of free and open source software development and distribution. The defining component of Linux is the Linux kernel, an operating system kernel first released on 5 October 1991 by Linus Torvalds.  Most of the posts made in this site are Linux related and linked to this category, ">Linux</a> (120)<ul class="children"><li class="cat-item cat-item-202"><a href="http://www.blackmoreops.com/category/linux/administration/">Administration</a> (18)</li><li class="cat-item cat-item-4"><a href="http://www.blackmoreops.com/category/linux/amd/">AMD</a> (9)</li><li class="cat-item cat-item-257"><a href="http://www.blackmoreops.com/category/linux/bind/">BIND</a> (1)</li><li class="cat-item cat-item-279"><a href="http://www.blackmoreops.com/category/linux/centos/">CentOS</a> (1)</li><li class="cat-item cat-item-36"><a href="http://www.blackmoreops.com/category/linux/cli/">cli</a> (12)</li><li class="cat-item cat-item-120"><a href="http://www.blackmoreops.com/category/linux/desktop-managers/" title="GNOME, KDE, LXDE, XFCE, MATE, Cinnamon and any other Linux Desktop Managers are listed in this category. ">Desktop Managers</a> (12)</li><li class="cat-item cat-item-121"><a href="http://www.blackmoreops.com/category/linux/kali-linux/" title="Kali Linux is a Debian-derived Linux distribution designed for digital forensics and penetration testing. It is maintained and funded by Offensive Security Ltd. It was developed by Mati Aharoni and Devon Kearns of Offensive Security through the rewriting BackTrack, their previous forensics Linux distribution">Kali Linux</a> (63)</li><li class="cat-item cat-item-141"><a href="http://www.blackmoreops.com/category/linux/metasploit/">Metasploit</a> (2)</li><li class="cat-item cat-item-203"><a href="http://www.blackmoreops.com/category/linux/monitoring/">Monitoring</a> (3)</li><li class="cat-item cat-item-295"><a href="http://www.blackmoreops.com/category/linux/nethunter/">NetHunter</a> (1)</li><li class="cat-item cat-item-34"><a href="http://www.blackmoreops.com/category/linux/networking/">Networking</a> (4)</li><li class="cat-item cat-item-58"><a href="http://www.blackmoreops.com/category/linux/nvidia/">NVIDIA</a> (8)</li><li class="cat-item cat-item-287"><a href="http://www.blackmoreops.com/category/linux/proxychains/">ProxyChains</a> (1)</li><li class="cat-item cat-item-60"><a href="http://www.blackmoreops.com/category/linux/pyrit/">Pyrit</a> (8)</li><li class="cat-item cat-item-282"><a href="http://www.blackmoreops.com/category/linux/reaver/">Reaver</a> (1)</li><li class="cat-item cat-item-206"><a href="http://www.blackmoreops.com/category/linux/security/">Security</a> (10)</li><li class="cat-item cat-item-155"><a href="http://www.blackmoreops.com/category/linux/sound/">Sound</a> (2)</li><li class="cat-item cat-item-199"><a href="http://www.blackmoreops.com/category/linux/vpn/">VPN</a> (1)</li><li class="cat-item cat-item-29"><a href="http://www.blackmoreops.com/category/linux/wpscan/">WPSCAN</a> (2)</li></ul></li><li class="cat-item cat-item-264"><a href="http://www.blackmoreops.com/category/news/">News</a> (1)</li><li class="cat-item cat-item-128"><a href="http://www.blackmoreops.com/category/others/">Others</a> (13)</li><li class="cat-item cat-item-284"><a href="http://www.blackmoreops.com/category/recover-root-password/">Recover root password</a> (1)</li><li class="cat-item cat-item-292"><a href="http://www.blackmoreops.com/category/spam/">Spam</a> (1)</li><li class="cat-item cat-item-214"><a href="http://www.blackmoreops.com/category/usability/">Usability</a> (2)</li><li class="cat-item cat-item-227"><a href="http://www.blackmoreops.com/category/usb/">USB</a> (1)</li><li class="cat-item cat-item-187"><a href="http://www.blackmoreops.com/category/virtualbox-2/">VirtualBox</a> (2)</li><li class="cat-item cat-item-23"><a href="http://www.blackmoreops.com/category/wifi/">Wifi</a> (10)</li><li class="cat-item cat-item-137"><a href="http://www.blackmoreops.com/category/wireless/">Wireless</a> (3)</li><li class="cat-item cat-item-28"><a href="http://www.blackmoreops.com/category/wordpress/">Wordpress</a> (3)</li></ul> </aside></div><div id="footer_three" class="span4"> <aside id="rss_links-3" class="widget widget_rss_links"><h3 class="widget-title">RSS Feed</h3><p><a href="http://www.blackmoreops.com/feed/" title="Subscribe to Posts"><img src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/orange-medium.png" alt="RSS Feed"></a>&nbsp;<a href="http://www.blackmoreops.com/feed/" title="Subscribe to Posts">RSS - Posts</a></p><p><a href="http://www.blackmoreops.com/comments/feed/" title="Subscribe to Comments"><img src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/orange-medium.png" alt="RSS Feed"></a>&nbsp;<a href="http://www.blackmoreops.com/comments/feed/" title="Subscribe to Comments">RSS - Comments</a></p> </aside></div></div></div><div class="colophon"><div class="container"><div class="row-fluid"><div class="span4 social-block pull-left"><span class="tc-footer-social-links-wrapper"><a class="social-icon icon-feed" href="http://www.blackmoreops.com/feed/" title="Subscribe to my rss feed"></a><a class="social-icon icon-twitter" href="https://twitter.com/blackMOREOps" title="Follow me on Twitter" target="_blank"></a><a class="social-icon icon-facebook" href="https://www.facebook.com/blackMOREOps" title="Follow me on Facebook" target="_blank"></a><a class="social-icon icon-google" href="https://plus.google.com/+blackMOREOps" title="Follow me on Google+" target="_blank"></a><a class="social-icon icon-tumblr" href="http://blackmoreops.tumblr.com/" title="Follow me on Tumblr" target="_blank"></a><a class="social-icon icon-pinterest" href="http://www.pinterest.com/blackmoreops/" title="Pin me on Pinterest" target="_blank"></a></span></div><div class="span4 credits"><p>· © 2015 <a href="http://www.blackmoreops.com/" title="blackMORE Ops" rel="bookmark">blackMORE Ops</a> · Designed by <a href="http://themesandco.com/">Themes &amp; Co</a> ·</p></div><div class="span4 backtop"><p class="pull-right"><a class="back-to-top" href="#">Back to top</a></p></div></div></div></div> </footer> <span id="bruteprotect_uptime_check_string" style="display:none;">7ads6x98y</span><script type="text/javascript" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/form.js"></script><script type="text/javascript">var tocplus={"smooth_scroll":"1","visibility_show":"show","visibility_hide":"hide","width":"66%"};</script><script type="text/javascript" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/front.js"></script><script type="text/javascript" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/devicepx-jetpack.js"></script><script type="text/javascript" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/comment-reply.js"></script><script type="text/javascript" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/core.js"></script><script type="text/javascript" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/modernizr.js"></script><script type="text/javascript" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/effect.js"></script><script type="text/javascript" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/retina.js"></script><!--[if IE]><script type="text/javascript">if(0===window.location.hash.indexOf('#comment-')){window.location.hash=window.location.hash;}</script><![endif]--><script type="text/javascript">/*<![CDATA[*/var comm_par_el=document.getElementById('comment_parent'),comm_par=(comm_par_el&&comm_par_el.value)?comm_par_el.value:'',frame=document.getElementById('jetpack_remote_comment'),tellFrameNewParent;tellFrameNewParent=function(){if(comm_par){frame.src="http://jetpack.wordpress.com/jetpack-comment/?blogid=60478163&postid=2596&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=1&avatar_default=wavatar&greeting=Leave+a+Reply&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en-US&jetpack_version=3.3.1&sig=7eb677fa58bc4e68e51ba9880ef84d71fcc56439#parent=http%3A%2F%2Fwww.blackmoreops.com%2F2014%2F09%2F18%2Fconnect-to-wifi-network-from-command-line-in-linux%2F"+'&replytocom='+parseInt(comm_par,10).toString();}else{frame.src="http://jetpack.wordpress.com/jetpack-comment/?blogid=60478163&postid=2596&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=1&avatar_default=wavatar&greeting=Leave+a+Reply&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en-US&jetpack_version=3.3.1&sig=7eb677fa58bc4e68e51ba9880ef84d71fcc56439#parent=http%3A%2F%2Fwww.blackmoreops.com%2F2014%2F09%2F18%2Fconnect-to-wifi-network-from-command-line-in-linux%2F";}};if('undefined'!==typeof addComment){addComment._Jetpack_moveForm=addComment.moveForm;addComment.moveForm=function(commId,parentId,respondId,postId){var returnValue=addComment._Jetpack_moveForm(commId,parentId,respondId,postId),cancelClick,cancel;if(false===returnValue){cancel=document.getElementById('cancel-comment-reply-link');cancelClick=cancel.onclick;cancel.onclick=function(){var cancelReturn=cancelClick.call(this);if(false!==cancelReturn){return cancelReturn;}
+if(!comm_par){return cancelReturn;}
+comm_par=0;tellFrameNewParent();return cancelReturn;};}
+if(comm_par==parentId){return returnValue;}
+comm_par=parentId;tellFrameNewParent();return returnValue;};}
+if(window.postMessage){if(document.addEventListener){window.addEventListener('message',function(event){if("http:\/\/jetpack.wordpress.com"!==event.origin){return;}
+jQuery(frame).height(event.data);});}else if(document.attachEvent){window.attachEvent('message',function(event){if("http:\/\/jetpack.wordpress.com"!==event.origin){return;}
+jQuery(frame).height(event.data);});}}/*]]>*/</script><script src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/e-201507.js" type="text/javascript"></script><script type="text/javascript">st_go({v:'ext',j:'1:3.3.1',blog:'60478163',post:'2596',tz:'10'});var load_cmc=function(){linktracker_init(60478163,2596,2);};if(typeof addLoadEvent!='undefined')addLoadEvent(load_cmc);else load_cmc();</script><img id="wpstats" src="Connect%20to%20WiFi%20network%20from%20command%20line%20in%20Linux%20-%20blackMORE%20Ops_files/g.gif"><div class="tc-btt-wrapper show"><i class="btt-arrow" style="color:#08c"></i></div><div id="link64_vdp_tabid" style="display:none;">1010</div><div style="padding: 40px;" id="arevicofancy-tmp"></div><div style="display: none;" id="arevicofancy-loading"><div></div></div><div style="background-color: rgb(119, 119, 119); opacity: 0.7; cursor: pointer; height: 14733px; display: none;" id="arevicofancy-overlay"></div><div style="width: 400px; height: auto; top: 1739px; left: 571px; display: none;" id="arevicofancy-wrap"><div id="arevicofancy-outer"><div class="arevicofancy-bg" id="arevicofancy-bg-n"></div><div class="arevicofancy-bg" id="arevicofancy-bg-ne"></div><div class="arevicofancy-bg" id="arevicofancy-bg-e"></div><div class="arevicofancy-bg" id="arevicofancy-bg-se"></div><div class="arevicofancy-bg" id="arevicofancy-bg-s"></div><div class="arevicofancy-bg" id="arevicofancy-bg-sw"></div><div class="arevicofancy-bg" id="arevicofancy-bg-w"></div><div class="arevicofancy-bg" id="arevicofancy-bg-nw"></div><div style="border-width: 0px; width: 400px; height: 260px;" id="arevicofancy-content"></div><a style="display: none;" id="arevicofancy-close"></a><div style="display: none;" id="arevicofancy-title"></div><a style="display: none;" href="javascript:;" id="arevicofancy-left"><span class="fancy-ico" id="arevicofancy-left-ico"></span></a><a style="display: none;" href="javascript:;" id="arevicofancy-right"><span class="fancy-ico" id="arevicofancy-right-ico"></span></a></div></div><a id="inline" href="#arvlbdata" style="display: none;">Show</a><div style="display:none"><div style="display: none;" class="arevicofancy-inline-tmp"></div></div><div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><table class="gstl_50 gssb_c" style="width: 163px; display: none; top: 704px; left: 1111px; position: absolute;" cellpadding="0" cellspacing="0"><tbody><tr><td class="gssb_f"></td><td style="width: 100%;" class="gssb_e"></td></tr></tbody></table></body></html>
